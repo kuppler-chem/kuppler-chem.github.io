@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unit 4: Chemical Equilibrium & Le Châtelier’s Principle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Unit 4: Chemical Equilibrium & Le Châtelier’s Principle</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="unit1.html">Unit 1</a></li>
+        <li><a href="unit2.html">Unit 2</a></li>
+        <li><a href="unit3.html">Unit 3</a></li>
+        <li><a aria-current="page" href="unit4.html">Unit 4</a></li>
+        <li><a href="standards.html">Standards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Unit Overview -->
+    <section class="unit-banner">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Balance_icon_greyscale.svg/240px-Balance_icon_greyscale.svg.png" alt="Equilibrium balance icon">
+      <div>
+        <h2 style="margin:4px 0 6px;">Unit Overview</h2>
+        <p class="mini">
+          In this 45-day unit, students develop a particle-level and quantitative model of
+          chemical equilibrium. They determine equilibrium constants (K<sub>c</sub>, K<sub>p</sub>),
+          reason with the reaction quotient (Q vs. K), and apply <em>Le Châtelier’s Principle</em> to predict and
+          justify shifts when conditions change (concentration, pressure/volume, temperature). Labs emphasize visual and
+          measurable systems (FeSCN<sup>2+</sup>, CoCl<sub>4</sub><sup>2−</sup> / Co(H<sub>2</sub>O)<sub>6</sub><sup>2+</sup>), and the unit culminates in a
+          **problem-based** task where students meet a performance target under realistic constraints by manipulating conditions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Per-Unit Standards (Unit 4 only) -->
+    <div class="std-strip mini" aria-label="Standards for Unit 4">
+      <strong>Standards for Unit 4:</strong>&nbsp;
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-6-matter-and-its-interactions" title="Refine the design of a chemical system by changing conditions to produce more product at equilibrium">HS-PS1-6</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-7-matter-and-its-interactions" title="Use mathematical representations to support that atoms and mass are conserved">HS-PS1-7</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions" title="Explain effects of changing temperature or concentration on rate of reaction">HS-PS1-5</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-2-matter-and-its-interactions" title="Construct and revise explanations for structure/properties of substances">HS-PS1-2</a>
+    </div>
+
+    <!-- Prominent Essential Questions + EQ resources -->
+    <section class="eq-banner" id="essential-questions">
+      <h2>Essential Questions</h2>
+      <ol class="eq-items">
+        <li><strong>EQ1:</strong> What does it mean for a chemical system to be at <em>dynamic equilibrium</em>, and how can we predict the direction a disturbed system will shift?</li>
+        <li><strong>EQ2:</strong> How can we strategically change conditions to achieve desired outcomes (safety, cost, yield, quality) in real processes?</li>
+      </ol>
+
+      <div class="eq-links">
+        <p><strong>Explore EQ1:</strong></p>
+        <ul>
+          <li><a target="_blank" href="https://phet.colorado.edu/en/simulation/reactions-and-rates">PhET – Reactions & Rates</a> (visualize forward/reverse processes, steady state)</li>
+          <li><a target="_blank" href="https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap">Khan Academy – Chemical Equilibrium</a> (K, Q, shifts)</li>
+          <li><a target="_blank" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_(OpenSTAX)/13%3A_Fundamental_Equilibrium_Concepts">LibreTexts – Equilibrium Basics</a> (clear explanations, examples)</li>
+          <li><a target="_blank" href="https://www.rsc.org/learn-chemistry/content/filerepository/CMP/00/001/547/Le-Chateliers-Principle-Expt.pdf">RSC – Le Châtelier’s Principle experiments</a></li>
+        </ul>
+
+        <p><strong>Explore EQ2:</strong></p>
+        <ul>
+          <li><a target="_blank" href="https://www.chemguide.co.uk/physical/equilibria/haber.html">Chemguide – The Haber Process</a> (real constraints: T, P, catalyst, recycle)</li>
+          <li><a target="_blank" href="https://www.rsc.org/education/teachers/resources/campaigns/learn-chemistry/">RSC – Contextual Chemistry</a> (industry, environment, sustainability)</li>
+          <li><a target="_blank" href="https://www.epa.gov/smm/sustainable-management-materials">EPA – Sustainable Materials</a> (waste minimization, process choices)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Helpful general resources -->
+    <section class="callout">
+      <strong>Helpful Resources</strong>
+      <ul class="mini" style="margin:8px 0 0 18px">
+        <li><a target="_blank" href="https://phet.colorado.edu/en/simulations/category/chemistry">PhET Chemistry Simulations</a></li>
+        <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry">Khan Academy Chemistry</a></li>
+        <li><a target="_blank" href="https://www.nextgenscience.org">Next Generation Science Standards (NGSS)</a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Weekly Breakdown with all 45 days ===== -->
+
+    <!-- WEEK 1 -->
+    <article class="week" id="week1">
+      <h3>Week 1 (Days 1–5) — What is Dynamic Equilibrium?</h3>
+      <p><span class="tag">Focus</span> Forward/reverse reactions, steady-state ideas, macroscopic constancy vs microscopic motion.</p>
+
+      <div class="day-card">
+        <h4>Day 1 — Intro to Equilibrium</h4>
+        <p><strong>Objective:</strong> Describe dynamic equilibrium qualitatively and contrast with “stopped” reactions.</p>
+        <p><strong>In class:</strong> PhET demo; particle diagrams for forward/reverse processes.</p>
+        <p><strong>Homework:</strong> Reading notes: equilibrium vocabulary.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — define “dynamic.”</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 2 — Forward vs Reverse Rates</h4>
+        <p><strong>Objective:</strong> Explain equilibrium as equal forward and reverse rates.</p>
+        <p><strong>In class:</strong> Simple kinetic model; graph rate vs time.</p>
+        <p><strong>Homework:</strong> Concept questions.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — what is true of rates at equilibrium?</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 3 — Constant Concentrations</h4>
+        <p><strong>Objective:</strong> Interpret concentration vs time graphs at and approaching equilibrium.</p>
+        <p><strong>In class:</strong> Graph analysis; connect to particulate reasoning.</p>
+        <p><strong>Homework:</strong> Sketch approach-to-equilibrium curves.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — identify when equilibrium is reached.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 4 — Lab Prep: Visual Equilibria</h4>
+        <p><strong>Objective:</strong> Prepare for FeSCN<sup>2+</sup> / CoCl<sub>4</sub><sup>2−</sup> visual equilibrium labs.</p>
+        <p><strong>In class:</strong> Safety; colorimetry basics; pre-lab questions.</p>
+        <p><strong>Homework:</strong> Pre-lab: predict qualitative shifts.</p>
+        <p><strong>Checkpoint:</strong> <em>Pre-lab check</em> — hazards & PPE identified.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 5 — Lab: Visual Equilibrium Survey</h4>
+        <p><strong>Objective:</strong> Observe reversible color changes for two systems; note qualitative trends.</p>
+        <p><strong>In class:</strong> Stations: Fe<sup>3+</sup> + SCN<sup>−</sup> ⇌ FeSCN<sup>2+</sup> (blood-red); CoCl<sub>4</sub><sup>2−</sup> + 6H<sub>2</sub>O ⇌ Co(H<sub>2</sub>O)<sub>6</sub><sup>2+</sup> + 4Cl<sup>−</sup> (blue/pink).</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Iron%28III%29-thiocyanate.svg/512px-Iron%28III%29-thiocyanate.svg.png" alt="FeSCN2+ complex diagram">
+        <p><strong>Homework:</strong> Complete observations & initial explanations.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — observations table complete.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 2 -->
+    <article class="week" id="week2">
+      <h3>Week 2 (Days 6–10) — Equilibrium Constant (K) & Reaction Quotient (Q)</h3>
+      <p><span class="tag">Focus</span> Writing K expressions, interpreting magnitude of K, relating Q to direction of shift.</p>
+
+      <div class="day-card">
+        <h4>Day 6 — Writing K Expressions</h4>
+        <p><strong>Objective:</strong> Write K<sub>c</sub> expressions (omit solids/liquids); connect to balanced equation stoichiometry.</p>
+        <p><strong>In class:</strong> Examples & non-examples; practice.</p>
+        <p><strong>Homework:</strong> K expression practice set.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — write K for a given reaction.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 7 — Interpreting K</h4>
+        <p><strong>Objective:</strong> Relate magnitude of K to product/reactant favorability.</p>
+        <p><strong>In class:</strong> Rank scenarios by K; connect to extent of reaction.</p>
+        <p><strong>Homework:</strong> Short problems on large/small K.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — which system is product-favored?</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 8 — Reaction Quotient Q</h4>
+        <p><strong>Objective:</strong> Compute Q from non-equilibrium conditions and compare to K to predict direction.</p>
+        <p><strong>In class:</strong> Q vs K problems (shift left/right/no change).</p>
+        <p><strong>Homework:</strong> Q vs K mixed practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — predict shift for a composition.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 9 — ICE Tables (Intro)</h4>
+        <p><strong>Objective:</strong> Use ICE tables to connect stoichiometry changes to equilibrium concentrations.</p>
+        <p><strong>In class:</strong> Setup and solve a simple quadratic-free case.</p>
+        <p><strong>Homework:</strong> ICE practice (intro level).</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — fill I, C, E rows correctly.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 10 — Formative Quiz & Reteach</h4>
+        <p><strong>Objective:</strong> Assess K/Q writing and direction prediction.</p>
+        <p><strong>In class:</strong> Short quiz; small-group reteach.</p>
+        <p><strong>Homework:</strong> Corrections + optional challenge.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 3 -->
+    <article class="week" id="week3">
+      <h3>Week 3 (Days 11–15) — Le Châtelier’s Principle (Concentration, Pressure/Volume, Temperature)</h3>
+      <p><span class="tag">Focus</span> Predict and justify shifts with particulate, graphical, and symbolic reasoning.</p>
+
+      <div class="day-card">
+        <h4>Day 11 — Le Châtelier: Concentration</h4>
+        <p><strong>Objective:</strong> Predict shifts when adding/removing species; tie to Q vs K.</p>
+        <p><strong>In class:</strong> Worked examples; particulate justifications.</p>
+        <p><strong>Homework:</strong> Practice set (concentration changes).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — shift for a given addition.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 12 — Le Châtelier: Pressure/Volume (Gases)</h4>
+        <p><strong>Objective:</strong> Predict shifts from P/V changes using Δn<sub>gas</sub> and particulate model.</p>
+        <p><strong>In class:</strong> Syringe/balloon demo; examples with varying gas moles.</p>
+        <p><strong>Homework:</strong> Gas equilibrium problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — direction when volume is halved.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 13 — Le Châtelier: Temperature</h4>
+        <p><strong>Objective:</strong> Treat heat as a reactant/product; shifts for endo/exo reactions.</p>
+        <p><strong>In class:</strong> Diagram-based reasoning; connect to K change with T.</p>
+        <p><strong>Homework:</strong> Temperature-change practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — predict effect of heating/cooling.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 14 — Lab: Le Châtelier in Action (FeSCN<sup>2+</sup> & Co Complex)</h4>
+        <p><strong>Objective:</strong> Test predicted shifts for concentration and temperature changes.</p>
+        <p><strong>In class:</strong> Add Fe<sup>3+</sup>/SCN<sup>−</sup>; add Cl<sup>−</sup>; warm/cool Co system; record color/intensity changes.</p>
+        <p><strong>Homework:</strong> Lab questions: link observations to Q vs K and Le Châtelier.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — claim–evidence–reasoning complete.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 15 — Debrief & Synthesis</h4>
+        <p><strong>Objective:</strong> Synthesize concentration/pressure/temperature shift reasoning.</p>
+        <p><strong>In class:</strong> Gallery walk of lab findings; error analysis.</p>
+        <p><strong>Homework:</strong> Short reflection on most powerful lever for shift.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — justify a chosen lever.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 4 -->
+    <article class="week" id="week4">
+      <h3>Week 4 (Days 16–20) — Quantifying Equilibrium: K<sub>c</sub> from Data</h3>
+      <p><span class="tag">Focus</span> Measure equilibrium concentrations; compute K; relate to temperature.</p>
+
+      <div class="day-card">
+        <h4>Day 16 — Measuring Equilibrium Concentrations</h4>
+        <p><strong>Objective:</strong> Plan data collection (colorimetry/absorbance or comparative intensity).</p>
+        <p><strong>In class:</strong> Beer’s Law overview (conceptually); calibration ideas; safety.</p>
+        <p><strong>Homework:</strong> Pre-lab calculations (standard prep plan).</p>
+        <p><strong>Checkpoint:</strong> <em>Pre-lab check</em> — standards chosen sensibly.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 17 — Lab: Determining K<sub>c</sub> for FeSCN<sup>2+</sup> (Color Method)</h4>
+        <p><strong>Objective:</strong> Prepare standards; measure sample intensity; estimate [FeSCN<sup>2+</sup>] at equilibrium; compute K<sub>c</sub>.</p>
+        <p><strong>In class:</strong> Run measurements; record data carefully; replicate one point.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Cuvettes_in_spectrophotometer.jpg/640px-Cuvettes_in_spectrophotometer.jpg" alt="Cuvettes for color analysis">
+        <p><strong>Homework:</strong> Complete calculations; uncertainty notes.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — K<sub>c</sub> reported with units context.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 18 — Interpreting K & Comparing Groups</h4>
+        <p><strong>Objective:</strong> Compare K values; discuss temperature sensitivity and error sources.</p>
+        <p><strong>In class:</strong> Class data display; discuss spread and likely causes.</p>
+        <p><strong>Homework:</strong> Short write-up: what would warming/cooling do to K?</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — claim about T vs K with justification.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 19 — ICE Tables & K Problems</h4>
+        <p><strong>Objective:</strong> Solve equilibrium problems given K and initial amounts.</p>
+        <p><strong>In class:</strong> Mixed problems; approximations when x ≪ initial.</p>
+        <p><strong>Homework:</strong> Problem set (ICE + K).</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — choose correct approximation.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 20 — Formative Quiz & Reteach</h4>
+        <p><strong>Objective:</strong> Assess K computation and ICE setup.</p>
+        <p><strong>In class:</strong> Short quiz; mini-clinics.</p>
+        <p><strong>Homework:</strong> Corrections/optional challenge.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 5 -->
+    <article class="week" id="week5">
+      <h3>Week 5 (Days 21–25) — Applying Le Châtelier Strategically</h3>
+      <p><span class="tag">Focus</span> Using condition changes to achieve targets (yield, purity, safety, cost) under constraints.</p>
+
+      <div class="day-card">
+        <h4>Day 21 — Strategy Workshop: “Levers & Tradeoffs”</h4>
+        <p><strong>Objective:</strong> Map available levers (T, P/V, concentration, recycle) to desired outcomes.</p>
+        <p><strong>In class:</strong> Case snippets (Haber, esterification); discuss constraints.</p>
+        <p><strong>Homework:</strong> Short case reflection.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — best lever for a given case.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 22 — Multi-Step Scenarios</h4>
+        <p><strong>Objective:</strong> Analyze sequences where shifts, separations, or temperature steps are combined.</p>
+        <p><strong>In class:</strong> Whiteboard walkthroughs; justify steps.</p>
+        <p><strong>Homework:</strong> Mixed scenario practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — justify a chosen sequence.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 23 — Mini-Design: Meet a Purity/Color Target</h4>
+        <p><strong>Objective:</strong> Use equilibrium reasoning to meet a specified indicator intensity/purity at the lowest cost/time.</p>
+        <p><strong>In class:</strong> Teams plan & justify; share short rationales.</p>
+        <p><strong>Homework:</strong> Write a brief strategy memo.</p>
+        <p><strong>Checkpoint:</strong> <em>Memo submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 24 — Review & Targeted Practice</h4>
+        <p><strong>Objective:</strong> Solidify K/Q, ICE, and Le Châtelier applications.</p>
+        <p><strong>In class:</strong> Stations by skill; teacher check-ins.</p>
+        <p><strong>Homework:</strong> Study guide.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — identify one remaining hurdle.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 25 — Unit 4 Mid-Exam</h4>
+        <p><strong>Objective:</strong> Assess core equilibrium skills pre-PBL.</p>
+        <p><strong>In class:</strong> Mid-unit written exam.</p>
+        <p><strong>Homework:</strong> None (exam day).</p>
+        <p><strong>Checkpoint:</strong> <em>Formal assessment — exam</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 6 -->
+    <article class="week" id="week6">
+      <h3>Week 6 (Days 26–30) — From Data to Decisions</h3>
+      <p><span class="tag">Focus</span> Interpreting class data; constraints & risk; set up the problem-based task.</p>
+
+      <div class="day-card">
+        <h4>Day 26 — Exam Debrief & Reteach</h4>
+        <p><strong>Objective:</strong> Address misconceptions; reinforce strategies.</p>
+        <p><strong>In class:</strong> Item analysis; reteach mini-lessons.</p>
+        <p><strong>Homework:</strong> Corrections due next class.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one fixed idea.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 27 — Data Synthesis</h4>
+        <p><strong>Objective:</strong> Use prior lab data to justify chosen levers under constraints.</p>
+        <p><strong>In class:</strong> Compare FeSCN<sup>2+</sup> and Co systems; discuss sensitivity to T and concentration.</p>
+        <p><strong>Homework:</strong> Draft preferred levers list.</p>
+        <p><strong>Checkpoint:</strong> <em>List submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 28 — Constraints & Risk</h4>
+        <p><strong>Objective:</strong> Identify safety, cost, and throughput constraints that limit lever choices.</p>
+        <p><strong>In class:</strong> Case constraints gallery; teacher scenarios.</p>
+        <p><strong>Homework:</strong> Constraint matrix (pro/con).</p>
+        <p><strong>Checkpoint:</strong> <em>Matrix approved</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 29 — PBL Launch: “On-Target Equilibrium”</h4>
+        <p><strong>Objective:</strong> Understand the problem brief and success metrics.</p>
+        <p><strong>In class:</strong> Teams receive a client spec (e.g., reach a target concentration/color within a time/cost/safety window by adjusting conditions).</p>
+        <p><strong>Homework:</strong> Draft plan & data needs.</p>
+        <p><strong>Checkpoint:</strong> <em>Plan submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 30 — Plan Review & Feedback</h4>
+        <p><strong>Objective:</strong> Improve plans via peer/teacher feedback.</p>
+        <p><strong>In class:</strong> Quick design reviews; verify calculations & logic.</p>
+        <p><strong>Homework:</strong> Revise plan.</p>
+        <p><strong>Checkpoint:</strong> <em>Revision approved</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 7 -->
+    <article class="week" id="week7">
+      <h3>Week 7 (Days 31–35) — Problem-Based Task: Trials & Data</h3>
+      <p><span class="tag">Focus</span> Run small trials; collect data; adjust conditions; justify with K/Q and Le Châtelier.</p>
+
+      <div class="day-card">
+        <h4>Day 31 — Trial 1 & Data Capture</h4>
+        <p><strong>Objective:</strong> Execute first trial; record time, T, composition/intensity.</p>
+        <p><strong>In class:</strong> Run; log; quick post-mortem.</p>
+        <p><strong>Homework:</strong> Update plan.</p>
+        <p><strong>Checkpoint:</strong> <em>Data log submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 32 — Trial 2 & Adjustments</h4>
+        <p><strong>Objective:</strong> Modify a single lever; justify expected shift.</p>
+        <p><strong>In class:</strong> Run; compare outcomes; note tradeoffs.</p>
+        <p><strong>Homework:</strong> Graph comparisons.</p>
+        <p><strong>Checkpoint:</strong> <em>Graph draft submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 33 — Trial 3 (If Needed) & Safety Check</h4>
+        <p><strong>Objective:</strong> Final trial within safety/cost bounds.</p>
+        <p><strong>In class:</strong> Execute; confirm target met or explain shortfall.</p>
+        <p><strong>Homework:</strong> Begin write-up.</p>
+        <p><strong>Checkpoint:</strong> <em>Target status reported</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 34 — Draft Solution Brief</h4>
+        <p><strong>Objective:</strong> Construct clear justification with K/Q logic, Le Châtelier reasoning, and data displays.</p>
+        <p><strong>In class:</strong> Writing workshop; peer feedback.</p>
+        <p><strong>Homework:</strong> Revise brief.</p>
+        <p><strong>Checkpoint:</strong> <em>Draft submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 35 — Readiness Review</h4>
+        <p><strong>Objective:</strong> Final checks on calculations, graphs, and claims.</p>
+        <p><strong>In class:</strong> Checklists; advisor sign-off.</p>
+        <p><strong>Homework:</strong> Final polish.</p>
+        <p><strong>Checkpoint:</strong> <em>Sign-off complete</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 8 -->
+    <article class="week" id="week8">
+      <h3>Week 8 (Days 36–40) — PBL Defense & Comparative Analysis</h3>
+      <p><span class="tag">Focus</span> Team defenses; critique; cross-comparison of strategies and tradeoffs.</p>
+
+      <div class="day-card">
+        <h4>Day 36 — Team Defenses (Part 1)</h4>
+        <p><strong>Objective:</strong> Present and defend solution; respond to questions.</p>
+        <p><strong>In class:</strong> Timed defenses; peer notes.</p>
+        <p><strong>Homework:</strong> Reflection prompt.</p>
+        <p><strong>Checkpoint:</strong> <em>Rubric scoring in progress</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 37 — Team Defenses (Part 2)</h4>
+        <p><strong>Objective:</strong> Complete defenses; note best practices.</p>
+        <p><strong>In class:</strong> Presentations continue; peer Q&A.</p>
+        <p><strong>Homework:</strong> Draft comparative analysis paragraph.</p>
+        <p><strong>Checkpoint:</strong> <em>Rubric scoring completed</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 38 — Comparative Analysis</h4>
+        <p><strong>Objective:</strong> Compare strategies (which levers worked, at what costs?).</p>
+        <p><strong>In class:</strong> Class discussion; compile best-practice list.</p>
+        <p><strong>Homework:</strong> Final comparison write-up.</p>
+        <p><strong>Checkpoint:</strong> <em>Write-up submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 39 — Consolidation Review</h4>
+        <p><strong>Objective:</strong> Review K/Q, ICE, and Le Châtelier with mixed problems.</p>
+        <p><strong>In class:</strong> Stations; teacher clinics; last questions.</p>
+        <p><strong>Homework:</strong> Study for Unit 4 exam.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one last concept to solidify.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 40 — Unit 4 Exam</h4>
+        <p><strong>Objective:</strong> Demonstrate mastery of equilibrium concepts.</p>
+        <p><strong>In class:</strong> Written exam (conceptual + quantitative).</p>
+        <p><strong>Homework:</strong> None (exam day).</p>
+        <p><strong>Checkpoint:</strong> <em>Formal assessment — exam</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 9 -->
+    <article class="week" id="week9">
+      <h3>Week 9 (Days 41–45) — Reflection & Course Synthesis</h3>
+      <p><span class="tag">Focus</span> Correctives, real-world wrap, connections back to Units 1–3.</p>
+
+      <div class="day-card">
+        <h4>Day 41 — Exam Debrief & Corrections</h4>
+        <p><strong>Objective:</strong> Analyze performance; correct misconceptions.</p>
+        <p><strong>In class:</strong> Error analysis; small-group reteach.</p>
+        <p><strong>Homework:</strong> Corrections.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one improved idea.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 42 — Real-World Equilibria</h4>
+        <p><strong>Objective:</strong> Connect equilibrium to environmental, biological, and industrial contexts.</p>
+        <p><strong>In class:</strong> Short case studies (buffers in blood; CO<sub>2</sub> in oceans; industrial syntheses).</p>
+        <p><strong>Homework:</strong> Choose one case and write a short explanation.</p>
+        <p><strong>Checkpoint:</strong> <em>Case explanation submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 43 — Cross-Unit Synthesis</h4>
+        <p><strong>Objective:</strong> Tie Unit 4 to Units 1–3 (structure, stoichiometry, energy/rate).</p>
+        <p><strong>In class:</strong> Concept map; whole-class share.</p>
+        <p><strong>Homework:</strong> Final reflection (course-level).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one enduring idea.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 44 — Showcase of Learning</h4>
+        <p><strong>Objective:</strong> Share key takeaways and applications with peers.</p>
+        <p><strong>In class:</strong> Poster/snippet showcase; feedback carousel.</p>
+        <p><strong>Homework:</strong> Optional enrichment problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Share-out complete</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 45 — Celebration & Next Steps</h4>
+        <p><strong>Objective:</strong> Celebrate progress; preview future chemistry courses and careers.</p>
+        <p><strong>In class:</strong> Course wrap; student appreciations.</p>
+        <p><strong>Homework:</strong> None.</p>
+        <p><strong>Checkpoint:</strong> <em>Course reflection submitted</em>.</p>
+      </div>
+    </article>
+
+    <!-- End-of-Unit Problem-Based Task (not a project) -->
+    <section class="callout">
+      <strong>Problem-Based Assignment: “On-Target Equilibrium”</strong><br/>
+      Teams receive a client specification (e.g., achieve a target product concentration/intensity within limits on time, temperature, pressure/volume, and safety).
+      Using <em>Le Châtelier’s Principle</em>, Q vs K reasoning, and quantitative supports (ICE/K where appropriate), students propose and defend an operating
+      strategy (what to change, by how much, and why). Deliverable: a concise solution brief with data, graphs, and justification.  
+      <div class="mini">
+        Standards alignment:
+        <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-6-matter-and-its-interactions">HS-PS1-6</a>,
+        <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-7-matter-and-its-interactions">HS-PS1-7</a>,
+        <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions">HS-PS1-5</a>.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Winslow Township High School | Honors Chemistry — Joseph Kuppler</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Honors Chemistry — Winslow Township HS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Page-specific touches that piggyback on styles.css */
+    .hero{
+      display:flex;gap:18px;align-items:center;padding:16px;background:#f6faf8;
+      border:1px solid #dfe7e2;border-radius:12px;margin:16px 0;
+    }
+    .hero img{width:92px;height:92px;object-fit:contain;border-radius:12px;background:#fff}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .card{background:#fff;border:1px solid #e6e6e6;border-radius:12px;padding:14px}
+    .card h3{margin:0 0 6px}
+    .card p{margin:6px 0 10px}
+    .btn{display:inline-block;padding:8px 12px;border:1px solid var(--winslow-green);
+      color:var(--winslow-green);border-radius:10px;text-decoration:none}
+    .btn:hover{background:var(--winslow-green);color:#fff}
+    .inline-img{max-width:100%;height:auto;border-radius:10px;border:1px solid #e6e6e6}
+    .notice{font-size:.95rem;background:#fff6e6;border:1px solid #ffd28c;border-left:6px solid #f0a200;
+      border-radius:10px;padding:10px 12px;margin:16px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Honors Chemistry</h1>
+    <h2>Winslow Township High School • 2025–2026</h2>
+    <nav>
+      <ul>
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <li><a href="unit1.html">Unit 1</a></li>
+        <li><a href="unit2.html">Unit 2</a></li>
+        <li><a href="unit3.html">Unit 3</a></li>
+        <li><a href="unit4.html">Unit 4</a></li>
+        <li><a href="standards.html">Standards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="assets/wths-logo.png" alt="Winslow Township High School Logo"
+           onerror="this.onerror=null; this.src='assets/placeholder.svg';" />
+      <div>
+        <h2 style="margin:0 0 6px;">Welcome to Honors Chemistry</h2>
+        <p class="mini">
+          This site hosts pacing, unit overviews, essential questions, labs/projects, and helpful resources
+          for students and families. Use the cards below to jump into the current unit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Image loading note for local previews -->
+    <div class="notice mini">
+      <strong>Heads up:</strong> If you open these pages directly from your computer (using <code>file://</code>),
+      some browsers block outside images. We’ve set all image paths to the local <code>assets/</code> folder and included a
+      fallback placeholder so everything displays reliably.
+    </div>
+
+    <!-- Unit Cards -->
+    <section class="cards" aria-label="Units">
+      <article class="card">
+        <img class="inline-img" src="assets/unit1.jpg" alt="Unit 1 illustrative image"
+             onerror="this.onerror=null; this.src='assets/placeholder.svg';"/>
+        <h3>Unit 1: Matter & Atomic Structure</h3>
+        <p class="mini">Structure of matter, periodic patterns, measurement & error, fundamental lab skills.</p>
+        <a class="btn" href="unit1.html">Open Unit 1</a>
+      </article>
+
+      <article class="card">
+        <img class="inline-img" src="assets/unit2.jpg" alt="Unit 2 illustrative image"
+             onerror="this.onerror=null; this.src='assets/placeholder.svg';"/>
+        <h3>Unit 2: Chemical Reactions & Stoichiometry</h3>
+        <p class="mini">Equations, reaction types, mole ratios, limiting reactant, percent yield, titrations.</p>
+        <a class="btn" href="unit2.html">Open Unit 2</a>
+      </article>
+
+      <article class="card">
+        <img class="inline-img" src="assets/unit3.jpg" alt="Unit 3 illustrative image"
+             onerror="this.onerror=null; this.src='assets/placeholder.svg';"/>
+        <h3>Unit 3: Thermochemistry & Kinetics</h3>
+        <p class="mini">q = m·c·ΔT, calorimetry, energy diagrams, rate factors, data-driven reasoning.</p>
+        <a class="btn" href="unit3.html">Open Unit 3</a>
+      </article>
+
+      <article class="card">
+        <img class="inline-img" src="assets/unit4.jpg" alt="Unit 4 illustrative image"
+             onerror="this.onerror=null; this.src='assets/placeholder.svg';"/>
+        <h3>Unit 4: Equilibrium & Le Châtelier</h3>
+        <p class="mini">K & Q, ICE tables, strategic condition changes, real-world optimization.</p>
+        <a class="btn" href="unit4.html">Open Unit 4</a>
+      </article>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="callout" style="margin-top:18px;">
+      <strong>Quick Links</strong>
+      <ul class="mini" style="margin:8px 0 0 18px">
+        <li><a target="_blank" href="https://www.nextgenscience.org">NGSS — Next Generation Science Standards</a></li>
+        <li><a target="_blank" href="https://phet.colorado.edu/en/simulations/category/chemistry">PhET Chemistry Simulations</a></li>
+        <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry">Khan Academy Chemistry</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Winslow Township High School | Honors Chemistry — Joseph Kuppler</p>
+  </footer>
+</body>
+</html>

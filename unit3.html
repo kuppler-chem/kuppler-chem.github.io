@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unit 3: Thermochemistry & Kinetics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Unit 3: Thermochemistry & Kinetics</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="unit1.html">Unit 1</a></li>
+        <li><a href="unit2.html">Unit 2</a></li>
+        <li><a aria-current="page" href="unit3.html">Unit 3</a></li>
+        <li><a href="unit4.html">Unit 4</a></li>
+        <li><a href="standards.html">Standards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Unit Overview -->
+    <section class="unit-banner">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Calorimeter_coffee_cup.svg/240px-Calorimeter_coffee_cup.svg.png" alt="Coffee-cup calorimeter icon">
+      <div>
+        <h2 style="margin:4px 0 6px;">Unit Overview</h2>
+        <p class="mini">
+          In this 45-day unit, students quantify energy changes in physical and chemical processes, perform calorimetry, construct and interpret reaction energy diagrams,
+          and analyze factors affecting reaction rate. Students connect energy accounting to particle-level models and design strategies to change rates and yields under realistic constraints.
+        </p>
+      </div>
+    </section>
+
+    <!-- Per-Unit Standards (Unit 3 only) -->
+    <div class="std-strip mini" aria-label="Standards for Unit 3">
+      <strong>Standards for Unit 3:</strong>&nbsp;
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-1-energy" title="Create a computational model for energy changes of a system">HS-PS3-1</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-4-energy" title="Design a device that converts one form of energy into another">HS-PS3-4</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-4-matter-and-its-interactions" title="Develop a model to illustrate changes in energy during reactions">HS-PS1-4</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions" title="Explain effects of changing temperature or concentration on rate">HS-PS1-5</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-6-matter-and-its-interactions" title="Refine the design of a chemical system by changing conditions">HS-PS1-6</a>
+    </div>
+
+    <!-- Prominent Essential Questions + EQ resources -->
+    <section class="eq-banner" id="essential-questions">
+      <h2>Essential Questions</h2>
+      <ol class="eq-items">
+        <li><strong>EQ1:</strong> How is energy stored, transferred, and measured in physical changes and chemical reactions?</li>
+        <li><strong>EQ2:</strong> What controls how fast reactions happen, and how can we change conditions to meet real-world goals?</li>
+      </ol>
+
+      <div class="eq-links">
+        <p><strong>Explore EQ1:</strong></p>
+        <ul>
+          <li><a target="_blank" href="https://phet.colorado.edu/en/simulation/energy-forms-and-changes">PhET – Energy Forms & Changes</a> (visualize energy transfer & conservation)</li>
+          <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry/thermodynamics-chemistry">Khan Academy – Thermochemistry</a> (q=mcΔT, phase changes, reaction enthalpy)</li>
+          <li><a target="_blank" href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Thermodynamics/State_Functions/Enthalpy">LibreTexts – Enthalpy basics</a> (concise reading + examples)</li>
+          <li><a target="_blank" href="https://phet.colorado.edu/en/simulation/specific-heat-capacity">PhET – Specific Heat</a> (model temperature change vs. energy input)</li>
+        </ul>
+
+        <p><strong>Explore EQ2:</strong></p>
+        <ul>
+          <li><a target="_blank" href="https://phet.colorado.edu/en/simulation/collision-lab">PhET – Collision Lab</a> (particle collisions & effective collisions)</li>
+          <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry/chemical-reactions-ap/chemical-kinetics-ap">Khan Academy – Kinetics</a> (rate factors, mechanisms, catalysts)</li>
+          <li><a target="_blank" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_(OpenSTAX)/12%3A_Chemical_Kinetics/12.05%3A_Factors_that_Affect_Reaction_Rates">LibreTexts – Factors Affecting Rates</a></li>
+          <li><a target="_blank" href="https://www.rsc.org/learn-chemistry/resources/chemistry-in-your-cupboard">RSC – Chemistry in your Cupboard</a> (applied rate/energy contexts)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Helpful general resources -->
+    <section class="callout">
+      <strong>Helpful Resources</strong>
+      <ul class="mini" style="margin:8px 0 0 18px">
+        <li><a target="_blank" href="https://phet.colorado.edu/en/simulations/category/chemistry">PhET Chemistry Simulations</a></li>
+        <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry">Khan Academy Chemistry</a></li>
+        <li><a target="_blank" href="https://www.nextgenscience.org">Next Generation Science Standards (NGSS)</a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Weekly Breakdown with all 45 days ===== -->
+
+    <!-- WEEK 1 -->
+    <article class="week" id="week1">
+      <h3>Week 1 (Days 1–5) — Energy Concepts & Measurement</h3>
+      <p><span class="tag">Focus</span> Energy forms, conservation, system vs surroundings, temperature vs heat, specific heat.</p>
+
+      <div class="day-card">
+        <h4>Day 1 — Energy & Systems</h4>
+        <p><strong>Objective:</strong> Distinguish system/surroundings; identify energy transfers (heat/work) qualitatively.</p>
+        <p><strong>In class:</strong> PhET demo (Energy Forms & Changes); energy flow diagrams.</p>
+        <p><strong>Homework:</strong> Reading notes on energy forms and conservation.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — label energy in a melting ice scenario.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 2 — Temperature vs Heat</h4>
+        <p><strong>Objective:</strong> Explain temperature as average kinetic energy; heat as energy transfer.</p>
+        <p><strong>In class:</strong> Particulate model animations; quick demos with metal/wood blocks.</p>
+        <p><strong>Homework:</strong> Concept practice (temp vs heat).</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — identify heat vs temperature in examples.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 3 — Specific Heat Capacity</h4>
+        <p><strong>Objective:</strong> Use q = m·c·ΔT for heating/cooling calculations.</p>
+        <p><strong>In class:</strong> Worked examples; unit analysis; estimation strategies.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Thermometer_celsius_scale.jpg/640px-Thermometer_celsius_scale.jpg" alt="Thermometer image">
+        <p><strong>Homework:</strong> Specific heat practice set.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — solve a q=mcΔT problem.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 4 — Calorimetry (Concepts)</h4>
+        <p><strong>Objective:</strong> Describe coffee-cup calorimetry assumptions; set up energy balance.</p>
+        <p><strong>In class:</strong> Sample calorimetry data; discuss error sources and insulation.</p>
+        <p><strong>Homework:</strong> Pre-lab questions for calorimetry lab.</p>
+        <p><strong>Checkpoint:</strong> <em>Pre-lab check</em> — identify system/surroundings in lab.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 5 — Lab: Coffee-Cup Calorimetry (Specific Heat of Metal)</h4>
+        <p><strong>Objective:</strong> Measure c of a metal via hot metal into cool water method.</p>
+        <p><strong>In class:</strong> Run trials; compute q<sub>water</sub> and infer q<sub>metal</sub> (−q<sub>water</sub>).</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Calorimeter_coffee_cup.svg/640px-Calorimeter_coffee_cup.svg.png" alt="Coffee cup calorimeter diagram">
+        <p><strong>Homework:</strong> Finish calculations; percent error.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — c within reasonable range.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 2 -->
+    <article class="week" id="week2">
+      <h3>Week 2 (Days 6–10) — Enthalpy & Phase Changes</h3>
+      <p><span class="tag">Focus</span> Endothermic/exothermic, heating/cooling curves, phase change energy, calorimetry practice.</p>
+
+      <div class="day-card">
+        <h4>Day 6 — Endo vs Exothermic</h4>
+        <p><strong>Objective:</strong> Identify sign of q for system; draw energy flow arrows.</p>
+        <p><strong>In class:</strong> Hand warmer vs cold pack analysis; particle-level sketches.</p>
+        <p><strong>Homework:</strong> Endo/exo practice problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — classify scenarios as endo/exo.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 7 — Heating/Cooling Curves</h4>
+        <p><strong>Objective:</strong> Interpret plateaus; calculate energy for temperature change vs phase change.</p>
+        <p><strong>In class:</strong> Graph analysis; piecewise q calculations (q = m·c·ΔT; q = m·ΔH<sub>phase</sub>).</p>
+        <p><strong>Homework:</strong> Heating curve practice set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — energy for melting step.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 8 — Calorimetry Practice (Solutions)</h4>
+        <p><strong>Objective:</strong> Calculate ΔH<sub>rxn</sub> from temperature change of solution (q = m·c·ΔT).</p>
+        <p><strong>In class:</strong> Worked examples; assumptions (c, density); sign conventions.</p>
+        <p><strong>Homework:</strong> Calorimetry problem set.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — sign of ΔH for observed T change.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 9 — Lab: Dissolution/Neutralization Calorimetry</h4>
+        <p><strong>Objective:</strong> Measure ΔH for a solution process (e.g., NaOH(aq) neutralization) or salt dissolution.</p>
+        <p><strong>In class:</strong> Run calorimetry; compute ΔH per mole; discuss assumptions.</p>
+        <p><strong>Homework:</strong> Finish analysis; error discussion.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — ΔH reported with sig figs & units.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 10 — Formative Quiz & Reteach</h4>
+        <p><strong>Objective:</strong> Assess energy skills; targeted reteach.</p>
+        <p><strong>In class:</strong> Short quiz (q=mcΔT, heating curves, signs); small-group support.</p>
+        <p><strong>Homework:</strong> Corrections/extra practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 3 -->
+    <article class="week" id="week3">
+      <h3>Week 3 (Days 11–15) — Reaction Enthalpy & Energy Diagrams</h3>
+      <p><span class="tag">Focus</span> ΔH<sub>rxn</sub>, Hess’s Law concepts (qualitative), reaction coordinate diagrams, activation energy & catalysts.</p>
+
+      <div class="day-card">
+        <h4>Day 11 — Reaction Enthalpy (ΔH<sub>rxn</sub>)</h4>
+        <p><strong>Objective:</strong> Define ΔH<sub>rxn</sub>; connect sign to endo/exo reactions.</p>
+        <p><strong>In class:</strong> Example reactions; energy accounting with surroundings.</p>
+        <p><strong>Homework:</strong> ΔH problems (no bond enthalpy tables needed yet).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — classify reaction by sign of ΔH.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 12 — Energy Diagrams</h4>
+        <p><strong>Objective:</strong> Interpret reaction coordinate diagrams; identify E<sub>a</sub>, ΔH, activated complex.</p>
+        <p><strong>In class:</strong> Sketch/label diagrams for exo vs endo; compare heights.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Reaction_coordinate_diagram.svg/640px-Reaction_coordinate_diagram.svg.png" alt="Reaction coordinate diagram">
+        <p><strong>Homework:</strong> Diagram labeling practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — identify E<sub>a</sub> on a diagram.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 13 — Catalysts & Energy Barriers</h4>
+        <p><strong>Objective:</strong> Explain how catalysts lower E<sub>a</sub> and speed up reactions without changing ΔH.</p>
+        <p><strong>In class:</strong> Enzyme and industrial catalysts examples; diagram comparisons.</p>
+        <p><strong>Homework:</strong> Catalyst reading & questions.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — does a catalyst change ΔH? Explain.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 14 — Lab: Energy Diagram from Data (Option 3A)</h4>
+        <p><strong>Objective:</strong> Collect temperature vs time data for an exo/endo process and sketch a qualitative energy diagram.</p>
+        <p><strong>In class:</strong> Measure T(t) during dissolution/neutralization; infer ΔH sign and relative E<sub>a</sub> with/without catalyst.</p>
+        <p><strong>Homework:</strong> Complete graph & brief explanation.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — diagram correctly annotated.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 15 — Alternative Lab: Arrhenius Demonstration (Option 3B)</h4>
+        <p><strong>Objective:</strong> Observe temperature dependence of rate (e.g., iodine clock variants) and relate to energy barrier.</p>
+        <p><strong>In class:</strong> Compare cold vs warm conditions; discuss effective collisions.</p>
+        <p><strong>Homework:</strong> Short write-up linking observations to E<sub>a</sub>.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — describe how T affected rate.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 4 -->
+    <article class="week" id="week4">
+      <h3>Week 4 (Days 16–20) — Collision Theory & Rate Laws (Qualitative)</h3>
+      <p><span class="tag">Focus</span> Effective collisions, concentration/temperature/surface area, catalysts; initial-rate thinking qualitatively.</p>
+
+      <div class="day-card">
+        <h4>Day 16 — Collision Theory</h4>
+        <p><strong>Objective:</strong> Describe effective collisions (orientation & energy threshold).</p>
+        <p><strong>In class:</strong> PhET Collision Lab; model-based explanations.</p>
+        <p><strong>Homework:</strong> Concept practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — what makes a collision effective?</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 17 — Concentration & Rate</h4>
+        <p><strong>Objective:</strong> Explain how higher concentration increases collision frequency, thus rate.</p>
+        <p><strong>In class:</strong> Stations comparing rate at different [A]; graphical reasoning.</p>
+        <p><strong>Homework:</strong> Qualitative rate problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — predict rate change when [A] doubles.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 18 — Temperature & Rate</h4>
+        <p><strong>Objective:</strong> Relate higher T to increased fraction of effective collisions.</p>
+        <p><strong>In class:</strong> Arrhenius rationale (qualitative); hot vs cold demo.</p>
+        <p><strong>Homework:</strong> Write short mechanistic explanation.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — explain T effect in one sentence.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 19 — Surface Area & Catalysts</h4>
+        <p><strong>Objective:</strong> Describe how surface area/catalysts change rate without changing ΔH.</p>
+        <p><strong>In class:</strong> Alka-Seltzer whole vs crushed; MnO₂-catalyzed H<sub>2</sub>O<sub>2</sub> demo.</p>
+        <p><strong>Homework:</strong> Catalyst case study (industrial or biological).</p>
+        <p><strong>Checkpoint:</strong> <em>Quick quiz</em> — choose best way to speed up a reaction.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 20 — Formative Quiz & Reteach</h4>
+        <p><strong>Objective:</strong> Check understanding of rate factors & collision theory.</p>
+        <p><strong>In class:</strong> Short quiz; targeted support.</p>
+        <p><strong>Homework:</strong> Corrections; choice practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 5 -->
+    <article class="week" id="week5">
+      <h3>Week 5 (Days 21–25) — Quantifying Energy: Extended Practice</h3>
+      <p><span class="tag">Focus</span> Mixed calorimetry & heating-curve problems; design constraints for energy transfer devices (HS-PS3-4 context).</p>
+
+      <div class="day-card">
+        <h4>Day 21 — Mixed Energy Problems I</h4>
+        <p><strong>Objective:</strong> Solve integrated q problems (phase + temperature changes).</p>
+        <p><strong>In class:</strong> Stations; unit analysis; sig-figs emphasis.</p>
+        <p><strong>Homework:</strong> Mixed set #1.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — explain which formula applies.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 22 — Mixed Energy Problems II</h4>
+        <p><strong>Objective:</strong> Apply energy accounting to multi-step scenarios.</p>
+        <p><strong>In class:</strong> Partner work; teacher mini-clinics.</p>
+        <p><strong>Homework:</strong> Mixed set #2.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — check units and sign.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 23 — Device Idea Brainstorm (Energy Transfer)</h4>
+        <p><strong>Objective:</strong> Brainstorm simple devices that convert/transfer energy (e.g., hand warmer sleeve).</p>
+        <p><strong>In class:</strong> Design constraints; materials brainstorming; quick sketches.</p>
+        <p><strong>Homework:</strong> Short concept proposal.</p>
+        <p><strong>Checkpoint:</strong> <em>Proposal submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 24 — Data-Driven Design Choices</h4>
+        <p><strong>Objective:</strong> Use energy calculations to justify design settings/materials.</p>
+        <p><strong>In class:</strong> Estimate q needs; compare materials by c and mass.</p>
+        <p><strong>Homework:</strong> Refine estimates.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — justify a material choice.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 25 — Checkpoint & Mini-Present</h4>
+        <p><strong>Objective:</strong> Share preliminary design reasoning; receive feedback.</p>
+        <p><strong>In class:</strong> 1-slide pitch + peer questions (non-graded checkpoint).</p>
+        <p><strong>Homework:</strong> Incorporate feedback.</p>
+        <p><strong>Checkpoint:</strong> <em>Feedback log submitted</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 6 -->
+    <article class="week" id="week6">
+      <h3>Week 6 (Days 26–30) — Kinetics Modeling & Data</h3>
+      <p><span class="tag">Focus</span> Collect simple rate data; analyze rate vs temperature/concentration; initial-rate reasoning.</p>
+
+      <div class="day-card">
+        <h4>Day 26 — Measuring Rate (Qualitative → Quantitative)</h4>
+        <p><strong>Objective:</strong> Define average/initial rate from simple time data.</p>
+        <p><strong>In class:</strong> Reaction clock demos (color change timing); safety & measurement tips.</p>
+        <p><strong>Homework:</strong> Pre-lab: plan which variable to change.</p>
+        <p><strong>Checkpoint:</strong> <em>Pre-lab check</em> — variable & controls identified.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 27 — Lab: Rate vs Concentration</h4>
+        <p><strong>Objective:</strong> Investigate how concentration affects time to event (proxy for rate).</p>
+        <p><strong>In class:</strong> Collect time data across [reactant]; initial-rate estimates.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Iodine_clock_reaction.jpg/640px-Iodine_clock_reaction.jpg" alt="Iodine clock style demonstration">
+        <p><strong>Homework:</strong> Plot & discuss trend.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — data table & graph complete.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 28 — Lab: Rate vs Temperature</h4>
+        <p><strong>Objective:</strong> Explore temperature effect on rate via timing method.</p>
+        <p><strong>In class:</strong> Warm vs cool conditions; control other variables.</p>
+        <p><strong>Homework:</strong> Graph & compare slopes.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — predict rate at intermediate T.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 29 — Data Analysis & Explanation</h4>
+        <p><strong>Objective:</strong> Construct explanations with data (CER) for rate factors.</p>
+        <p><strong>In class:</strong> Group analysis; share trends; link to collision theory.</p>
+        <p><strong>Homework:</strong> Write CER paragraph.</p>
+        <p><strong>Checkpoint:</strong> <em>CER draft submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 30 — Formative Quiz (Kinetics)</h4>
+        <p><strong>Objective:</strong> Check understanding of rate factors with data interpretation.</p>
+        <p><strong>In class:</strong> Quiz with graphs & short explanations.</p>
+        <p><strong>Homework:</strong> Corrections as needed.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 7 -->
+    <article class="week" id="week7">
+      <h3>Week 7 (Days 31–35) — Synthesis, Review & Exam</h3>
+      <p><span class="tag">Focus</span> Pull together energy & rate; exam; corrections; enrichment.</p>
+
+      <div class="day-card">
+        <h4>Day 31 — Energy & Rate Synthesis</h4>
+        <p><strong>Objective:</strong> Connect energy barriers with observed rate trends and design choices.</p>
+        <p><strong>In class:</strong> Case analyses; practice explaining observed data.</p>
+        <p><strong>Homework:</strong> Mixed review set (energy + rate).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — link E<sub>a</sub> to rate.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 32 — Comprehensive Review</h4>
+        <p><strong>Objective:</strong> Prepare for Unit 3 exam.</p>
+        <p><strong>In class:</strong> Stations; Q&A; exam tips.</p>
+        <p><strong>Homework:</strong> Study guide.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — two targets for study.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 33 — Unit 3 Exam</h4>
+        <p><strong>Objective:</strong> Demonstrate mastery of thermochemistry & kinetics concepts.</p>
+        <p><strong>In class:</strong> Unit exam.</p>
+        <p><strong>Homework:</strong> None (exam day).</p>
+        <p><strong>Checkpoint:</strong> <em>Formal assessment — exam</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 34 — Exam Debrief & Corrections</h4>
+        <p><strong>Objective:</strong> Analyze performance and correct misconceptions.</p>
+        <p><strong>In class:</strong> Error analysis; target reteach.</p>
+        <p><strong>Homework:</strong> Corrections due next class.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — improved concept explained.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 35 — Enrichment Challenge</h4>
+        <p><strong>Objective:</strong> Apply concepts to novel problems (device efficiency, catalyst selection).</p>
+        <p><strong>In class:</strong> Choice challenges; share-outs.</p>
+        <p><strong>Homework:</strong> Reflection paragraph.</p>
+        <p><strong>Checkpoint:</strong> <em>Share-out</em> — one new insight.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 8 -->
+    <article class="week" id="week8">
+      <h3>Week 8 (Days 36–40) — Problem-Based Task Sprint</h3>
+      <p><span class="tag">Focus</span> Multi-constraint problem: meet a temperature profile or production target by selecting conditions/materials (rates + energy).</p>
+
+      <div class="day-card">
+        <h4>Day 36 — PBL Launch: “Hot Pack, Cold Pack, or Fast Track?”</h4>
+        <p><strong>Objective:</strong> Understand the problem: choose and justify a process (or product) that meets a specified thermal or time constraint using energy & rate reasoning.</p>
+        <p><strong>In class:</strong> Teams receive client brief (e.g., keep a specimen cool for 25 minutes; reach a temp quickly without overshoot; complete reaction within 10 minutes safely).</p>
+        <p><strong>Homework:</strong> Identify needed data; plan tests/calculations.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — team goal & constraints listed.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 37 — Data Planning & Estimation</h4>
+        <p><strong>Objective:</strong> Plan measurements/calculations (q estimates; rate expectations from T or [ ] changes).</p>
+        <p><strong>In class:</strong> Draft data tables; rough energy budgets; safety review.</p>
+        <p><strong>Homework:</strong> Prepare materials list and timeline.</p>
+        <p><strong>Checkpoint:</strong> <em>Plan approved</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 38 — Trial Runs & Observations</h4>
+        <p><strong>Objective:</strong> Run small-scale trials; capture T(t) or time-to-endpoint; note issues.</p>
+        <p><strong>In class:</strong> Data collection; adjust approach as needed.</p>
+        <p><strong>Homework:</strong> Initial analysis; propose tweaks.</p>
+        <p><strong>Checkpoint:</strong> <em>Data snapshot submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 39 — Refinement & Justification</h4>
+        <p><strong>Objective:</strong> Use data to refine process and justify choices with calculations/explanations.</p>
+        <p><strong>In class:</strong> Iterate; prepare brief for client with quantitative support.</p>
+        <p><strong>Homework:</strong> Draft final write-up.</p>
+        <p><strong>Checkpoint:</strong> <em>Draft submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 40 — Finalize PBL Deliverables</h4>
+        <p><strong>Objective:</strong> Complete solution brief (calculations, graphs, safety, constraints, tradeoffs).</p>
+        <p><strong>In class:</strong> Final checks; rehearsal for next day’s defense.</p>
+        <p><strong>Homework:</strong> Polish deliverable.</p>
+        <p><strong>Checkpoint:</strong> <em>Ready for defense</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 9 -->
+    <article class="week" id="week9">
+      <h3>Week 9 (Days 41–45) — PBL Defense & Transition</h3>
+      <p><span class="tag">Focus</span> Presentations/defense; cross-team critique; connect to Unit 4 equilibrium ideas.</p>
+
+      <div class="day-card">
+        <h4>Day 41 — PBL Team Defenses (Part 1)</h4>
+        <p><strong>Objective:</strong> Defend solution with data and calculations; answer questions.</p>
+        <p><strong>In class:</strong> Timed defenses; peer panel feedback forms.</p>
+        <p><strong>Homework:</strong> Reflection on feedback.</p>
+        <p><strong>Checkpoint:</strong> <em>Rubric scoring in progress</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 42 — PBL Team Defenses (Part 2)</h4>
+        <p><strong>Objective:</strong> Complete defenses; compare solutions and tradeoffs.</p>
+        <p><strong>In class:</strong> Presentations continue; group debrief on constraints.</p>
+        <p><strong>Homework:</strong> Final edits to write-ups.</p>
+        <p><strong>Checkpoint:</strong> <em>Rubric scoring completed</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 43 — PBL Reflection & Lessons Learned</h4>
+        <p><strong>Objective:</strong> Reflect on how energy & rate constraints shape real processes.</p>
+        <p><strong>In class:</strong> Class discussion; write reflection connecting to EQs.</p>
+        <p><strong>Homework:</strong> Submit reflection.</p>
+        <p><strong>Checkpoint:</strong> <em>Reflection submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 44 — Bridge to Equilibrium</h4>
+        <p><strong>Objective:</strong> Preview how changing conditions affects system balance (sets up Unit 4).</p>
+        <p><strong>In class:</strong> Simple reversible reaction demo; qualitative Le Châtelier teaser.</p>
+        <p><strong>Homework:</strong> Read Unit 4 overview.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — predict effect of a change qualitatively.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 45 — Consolidation & Transition</h4>
+        <p><strong>Objective:</strong> Consolidate Unit 3 takeaways; prepare for Unit 4.</p>
+        <p><strong>In class:</strong> Review highlights; practice question linking rates ↔ equilibrium.</p>
+        <p><strong>Homework:</strong> Bring questions for Unit 4 launch.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one question for Unit 4.</p>
+      </div>
+    </article>
+
+    <!-- End-of-Unit Problem-Based Task (not a project) -->
+    <section class="callout">
+      <strong>Problem-Based Assignment: “Hot Pack, Cold Pack, or Fast Track?”</strong><br/>
+      Teams receive a client scenario with target performance (temperature/time window, safety & cost constraints). They must <em>select conditions and justify them</em> using
+      energy calculations (q = m·c·ΔT; heating/phase steps) and rate reasoning (T, [ ], surface area, catalysts). Deliverable: a brief solution with data, graphs, calculations,
+      and a justified recommendation (ties to <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-1-energy">HS-PS3-1</a>,
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions">HS-PS1-5</a>,
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-4-energy">HS-PS3-4</a>,
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-6-matter-and-its-interactions">HS-PS1-6</a>).
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Winslow Township High School | Honors Chemistry — Joseph Kuppler</p>
+  </footer>
+</body>
+</html>

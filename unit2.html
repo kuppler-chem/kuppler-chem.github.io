@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unit 2: Chemical Reactions & Stoichiometry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Unit 2: Chemical Reactions & Stoichiometry</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="unit1.html">Unit 1</a></li>
+        <li><a aria-current="page" href="unit2.html">Unit 2</a></li>
+        <li><a href="unit3.html">Unit 3</a></li>
+        <li><a href="unit4.html">Unit 4</a></li>
+        <li><a href="standards.html">Standards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Unit Overview -->
+    <section class="unit-banner">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Balance_icon.svg/120px-Balance_icon.svg.png" alt="Balance scale icon">
+      <div>
+        <h2 style="margin:4px 0 6px;">Unit Overview</h2>
+        <p class="mini">
+          In this 45-day unit, students learn to represent and quantify chemical change using balanced equations and the mole concept.
+          They classify reaction types, perform stoichiometric calculations (including limiting reactant and percent yield), and apply concepts to gases and solutions.
+          The unit culminates in a project where students optimize a real-world production scenario using stoichiometry.
+        </p>
+      </div>
+    </section>
+
+    <!-- Per-Unit Standards (Unit 2 only) -->
+    <div class="std-strip mini" aria-label="Standards for Unit 2">
+      <strong>Standards for Unit 2:</strong>&nbsp;
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-2-matter-and-its-interactions" title="Construct and revise an explanation for the structure and properties of substances">HS-PS1-2</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-3-matter-and-its-interactions" title="Plan and conduct an investigation to gather evidence of the properties of substances before and after they interact">HS-PS1-3</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions" title="Apply scientific principles and evidence to provide an explanation about the effects of changing temperature or concentration on the rate of a reaction">HS-PS1-5</a>
+      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-7-matter-and-its-interactions" title="Use mathematical representations to support the claim that atoms, and therefore mass, are conserved during a chemical reaction">HS-PS1-7</a>
+    </div>
+
+    <!-- Prominent Essential Questions + EQ resources -->
+    <section class="eq-banner" id="essential-questions">
+      <h2>Essential Questions</h2>
+      <ol class="eq-items">
+        <li><strong>EQ1:</strong> How do balanced chemical equations allow us to quantify and predict the amounts of substances in real reactions?</li>
+        <li><strong>EQ2:</strong> What factors limit real chemical processes, and how can we optimize yield and efficiency?</li>
+      </ol>
+
+      <div class="eq-links">
+        <p><strong>Explore EQ1:</strong></p>
+        <ul>
+          <li><a target="_blank" href="https://phet.colorado.edu/en/simulation/legacy/reactants-products-and-leftovers">PhET – Reactants, Products & Leftovers</a> (visual model of limiting/excess reactants)</li>
+          <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry/chemical-reactions-stoichiome">Khan Academy – Stoichiometry</a> (mole ratios, limiting reactant, percent yield)</li>
+          <li><a target="_blank" href="https://chem.libretexts.org/Courses/Remixer_University/University_of_California_Davis/UCD_Chem_002A%3A_General_Chemistry/Unit_3%3A_Chemical_Reactions/Stoichiometry_of_Chemical_Reactions">LibreTexts – Stoichiometry of Reactions</a> (clear walkthroughs + examples)</li>
+          <li><a target="_blank" href="https://www.chemcollective.org/activities/autograded/stoich">ChemCollective – Stoichiometry Autograded Activities</a> (practice problems)</li>
+        </ul>
+
+        <p><strong>Explore EQ2:</strong></p>
+        <ul>
+          <li><a target="_blank" href="https://phet.colorado.edu/en/simulation/legacy/reversible-reactions">PhET – Reversible Reactions (rates & reversibility)</a></li>
+          <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry/chemical-reactions-ap">Khan Academy – Reaction Rates & Yield</a></li>
+          <li><a target="_blank" href="https://www.rsc.org/learn-chemistry/resource/res00001249/industrial-processes-and-economics?cmpid=CMP00005177">RSC – Industrial Processes & Economics</a> (real process constraints)</li>
+          <li><a target="_blank" href="https://www.epa.gov/smm/sustainable-management-materials">EPA – Sustainable Materials Management</a> (waste minimization, efficiency themes)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Helpful general resources -->
+    <section class="callout">
+      <strong>Helpful Resources</strong>
+      <ul class="mini" style="margin:8px 0 0 18px">
+        <li><a target="_blank" href="https://phet.colorado.edu/en/simulations/category/chemistry">PhET Chemistry Simulations</a></li>
+        <li><a target="_blank" href="https://www.khanacademy.org/science/chemistry">Khan Academy Chemistry</a></li>
+        <li><a target="_blank" href="https://www.nextgenscience.org">Next Generation Science Standards (NGSS)</a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Weekly Breakdown with all 45 days ===== -->
+
+    <!-- WEEK 1 -->
+    <article class="week" id="week1">
+      <h3>Week 1 (Days 1–5) — Chemical Equations & Reaction Types</h3>
+      <p><span class="tag">Focus</span> Writing/balancing equations; evidence of chemical change; classifying reactions.</p>
+
+      <div class="day-card">
+        <h4>Day 1 — Evidence of Chemical Change</h4>
+        <p><strong>Objective:</strong> Identify indicators of chemical reactions (gas, precipitate, temperature, color change).</p>
+        <p><strong>In class:</strong> Demo set (vinegar/baking soda, precipitate formation); claim–evidence–reasoning discussion.</p>
+        <p><strong>Homework:</strong> Reading: reaction evidence; short reflection.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — identify evidence in a new scenario.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 2 — Symbols & States in Equations</h4>
+        <p><strong>Objective:</strong> Use chemical symbols, formulas, and state symbols correctly.</p>
+        <p><strong>In class:</strong> Notation mini-lesson; practice translating words→formulas.</p>
+        <p><strong>Homework:</strong> Formula/notation practice set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — write states for given equations.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 3 — Balancing Chemical Equations (Intro)</h4>
+        <p><strong>Objective:</strong> Balance equations using coefficients to satisfy conservation of mass.</p>
+        <p><strong>In class:</strong> Direct instruction + scaffolded practice; conservation demo.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chemical_equation_balance.svg/640px-Chemical_equation_balance.svg.png" alt="Balancing chemical equations diagram">
+        <p><strong>Homework:</strong> Balancing worksheet (Level 1).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — balance 1 equation correctly.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 4 — Reaction Types</h4>
+        <p><strong>Objective:</strong> Classify reactions (synthesis, decomposition, single replacement, double replacement, combustion).</p>
+        <p><strong>In class:</strong> Pattern matching; identify products in common forms.</p>
+        <p><strong>Homework:</strong> Reaction classification practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick quiz</em> — identify reaction types.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 5 — Lab: Reaction Types Survey</h4>
+        <p><strong>Objective:</strong> Observe & classify reactions; write balanced equations for each.</p>
+        <p><strong>In class:</strong> Station lab (precipitation, single-replacement metal + acid, combustion of a hydrocarbon demo).</p>
+        <p><strong>Homework:</strong> Complete lab write-up with balanced equations.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — correct classification + balanced equations.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 2 -->
+    <article class="week" id="week2">
+      <h3>Week 2 (Days 6–10) — Mole Concept & Ratios</h3>
+      <p><span class="tag">Focus</span> Mole concept, molar mass, percent composition, empirical & molecular formulas.</p>
+
+      <div class="day-card">
+        <h4>Day 6 — The Mole & Avogadro’s Number</h4>
+        <p><strong>Objective:</strong> Define the mole and relate particles↔moles↔mass.</p>
+        <p><strong>In class:</strong> Conversion ladder; particle analogies.</p>
+        <p><strong>Homework:</strong> Mole conversion practice (particles↔moles↔grams).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — convert given particles to grams.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 7 — Molar Mass & Conversions</h4>
+        <p><strong>Objective:</strong> Calculate molar mass and perform two-step conversions.</p>
+        <p><strong>In class:</strong> Periodic table practice; error-analysis problems.</p>
+        <p><strong>Homework:</strong> Mixed conversion set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — molar mass of a hydrate & convert to moles.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 8 — Percent Composition & Hydrates</h4>
+        <p><strong>Objective:</strong> Determine percent composition and analyze hydrates.</p>
+        <p><strong>In class:</strong> Examples and guided practice; hydrate mass loss problems.</p>
+        <p><strong>Homework:</strong> Percent composition worksheet.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — composition of a binary compound.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 9 — Empirical & Molecular Formulas</h4>
+        <p><strong>Objective:</strong> Derive empirical and molecular formulas from data.</p>
+        <p><strong>In class:</strong> Combustion analysis problems; percent→moles→ratio.</p>
+        <p><strong>Homework:</strong> Empirical/molecular set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick quiz</em> — empirical formula from % data.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 10 — Formative Quiz + Reteach</h4>
+        <p><strong>Objective:</strong> Assess and reinforce mole skills.</p>
+        <p><strong>In class:</strong> Short quiz; targeted reteach rotations.</p>
+        <p><strong>Homework:</strong> Correct errors; optional challenge problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 3 -->
+    <article class="week" id="week3">
+      <h3>Week 3 (Days 11–15) — Stoichiometry Fundamentals</h3>
+      <p><span class="tag">Focus</span> Mole ratios from balanced equations; mass–mass, mass–moles, particles–mass conversions.</p>
+
+      <div class="day-card">
+        <h4>Day 11 — Stoichiometric Ratios</h4>
+        <p><strong>Objective:</strong> Use coefficients as mole ratios.</p>
+        <p><strong>In class:</strong> Translate balanced equations to ratios; simple mass→mass problems.</p>
+        <p><strong>Homework:</strong> Ratio practice set.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — identify correct mole ratio for a product.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 12 — Mass–Mass Problems</h4>
+        <p><strong>Objective:</strong> Solve two- and three-step stoichiometry problems.</p>
+        <p><strong>In class:</strong> Worked examples; partner practice; solution checks.</p>
+        <p><strong>Homework:</strong> Mass–mass problem set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — grams reactant → grams product.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 13 — Particles & Volume Variations</h4>
+        <p><strong>Objective:</strong> Include particles (Avogadro’s number) and gas volume at STP.</p>
+        <p><strong>In class:</strong> Mixed problems; note assumptions at STP.</p>
+        <p><strong>Homework:</strong> Mixed stoichiometry practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — moles→L at STP.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 14 — Limiting Reactant (Concepts)</h4>
+        <p><strong>Objective:</strong> Identify limiting/excess reactants with models and numeric data.</p>
+        <p><strong>In class:</strong> PhET “Reactants, Products & Leftovers”; pizza/recipe analogies → balanced equations.</p>
+        <p><strong>Homework:</strong> Limiting reactant practice set (intro).</p>
+        <p><strong>Checkpoint:</strong> <em>Quick quiz</em> — identify LR from given quantities.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 15 — Percent Yield (Concepts)</h4>
+        <p><strong>Objective:</strong> Distinguish theoretical vs. actual yield; compute percent yield.</p>
+        <p><strong>In class:</strong> Example walkthroughs; common sources of loss.</p>
+        <p><strong>Homework:</strong> Percent yield problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — calculate percent yield from data.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 4 -->
+    <article class="week" id="week4">
+      <h3>Week 4 (Days 16–20) — Labs: Limiting Reactant & Percent Yield</h3>
+      <p><span class="tag">Focus</span> Hands-on limiting reactant (parallel reactions by groups) and a percent yield synthesis.</p>
+
+      <div class="day-card">
+        <h4>Day 16 — Lab Setup & Safety Briefing</h4>
+        <p><strong>Objective:</strong> Prepare for Limiting Reactant Lab; review procedures & safety.</p>
+        <p><strong>In class:</strong> Pre-lab questions; station assignments; calibration of balances.</p>
+        <p><strong>Homework:</strong> Pre-lab calculations (predict LR for assigned reaction).</p>
+        <p><strong>Checkpoint:</strong> <em>Pre-lab check</em> — predicted LR correct.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 17 — Lab: Limiting Reactant (Group Variations)</h4>
+        <p><strong>Objective:</strong> Determine the limiting reactant empirically using different reaction pairs.</p>
+        <p><strong>In class:</strong> Parallel reactions by groups (e.g., <em>precipitation</em>: Na₂CO₃ + CaCl₂ → CaCO₃↓; <em>gas-forming</em>: NaHCO₃ + HCl → CO₂↑; <em>metal displacement</em>: CuSO₄ + Fe → Cu).</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Precipitation_reaction_CaCO3.jpg/640px-Precipitation_reaction_CaCO3.jpg" alt="Precipitation of CaCO3 in a limiting reactant lab">
+        <p><strong>Homework:</strong> Begin calculations; identify LR and theoretical yield.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — data table complete.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 18 — Lab Workup: Limiting Reactant</h4>
+        <p><strong>Objective:</strong> Calculate theoretical, actual, and percent yield; analyze error.</p>
+        <p><strong>In class:</strong> Finish calculations; error analysis discussion across groups.</p>
+        <p><strong>Homework:</strong> Formal lab report draft.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — defend LR choice with data.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 19 — Lab: Percent Yield (Copper Cycle or Synthesis)</h4>
+        <p><strong>Objective:</strong> Perform a reaction to determine percent yield from collected product.</p>
+        <p><strong>In class:</strong> Example: Synthesize Cu from CuSO₄ + Fe; filter, dry, weigh.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Copper_sulfate_pentahydrate.jpg/640px-Copper_sulfate_pentahydrate.jpg" alt="Copper sulfate pentahydrate crystals">
+        <p><strong>Homework:</strong> Compute yields and sources of error.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — theoretical vs actual yield computed.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 20 — Lab Debrief & Reteach</h4>
+        <p><strong>Objective:</strong> Compare results; connect to EQs (limits & optimization).</p>
+        <p><strong>In class:</strong> Cross-group presentations; common pitfalls; tie to industry scale-up.</p>
+        <p><strong>Homework:</strong> Lab report revisions.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one way to improve yield.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 5 -->
+    <article class="week" id="week5">
+      <h3>Week 5 (Days 21–25) — Solution Stoichiometry & Intro Titrations</h3>
+      <p><span class="tag">Focus</span> Molarity, dilution, solution stoichiometry, introduction to titration.</p>
+
+      <div class="day-card">
+        <h4>Day 21 — Molarity & Dilution</h4>
+        <p><strong>Objective:</strong> Calculate molarity; perform dilution problems (M₁V₁ = M₂V₂).</p>
+        <p><strong>In class:</strong> Practice sets; making a standard solution demo.</p>
+        <p><strong>Homework:</strong> Molarity/dilution problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — compute volume needed for a target M.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 22 — Solution Stoichiometry</h4>
+        <p><strong>Objective:</strong> Use molarity in stoichiometric calculations (vol→mol→mol→vol/mass).</p>
+        <p><strong>In class:</strong> Guided problems; precipitation context.</p>
+        <p><strong>Homework:</strong> Solution stoichiometry set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — volume of product formed.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 23 — Intro to Titrations</h4>
+        <p><strong>Objective:</strong> Understand titration setup and endpoint concepts.</p>
+        <p><strong>In class:</strong> Virtual titration (ChemCollective) + sample calculation.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Titration.jpeg/640px-Titration.jpeg" alt="Acid-base titration setup">
+        <p><strong>Homework:</strong> Pre-lab titration questions.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — identify endpoint vs equivalence.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 24 — Lab: Acid–Base Titration (Intro)</h4>
+        <p><strong>Objective:</strong> Determine concentration via titration data.</p>
+        <p><strong>In class:</strong> Run simple monoprotic acid–base titration; capture volumes; compute M.</p>
+        <p><strong>Homework:</strong> Finish calculations; error sources.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — concentration reported with sig figs.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 25 — Titration Workup & Quiz</h4>
+        <p><strong>Objective:</strong> Finalize titration analysis; assess solution stoich skills.</p>
+        <p><strong>In class:</strong> Debrief; short quiz (molarity, dilution, solution stoich).</p>
+        <p><strong>Homework:</strong> Corrections or extension tasks.</p>
+        <p><strong>Checkpoint:</strong> <em>Formal formative — quiz</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 6 -->
+    <article class="week" id="week6">
+      <h3>Week 6 (Days 26–30) — Gas Stoichiometry & Project Launch</h3>
+      <p><span class="tag">Focus</span> Gas laws at a glance; gas stoichiometry; launch the Unit 2 project.</p>
+
+      <div class="day-card">
+        <h4>Day 26 — Gas Laws (Overview)</h4>
+        <p><strong>Objective:</strong> Review relationships (P–V–T–n) and STP assumptions for basic stoichiometry.</p>
+        <p><strong>In class:</strong> Concept maps; sample problems using 22.4 L/mol at STP.</p>
+        <p><strong>Homework:</strong> Gas law warm-up problems.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — convert moles to liters at STP.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 27 — Gas Stoichiometry</h4>
+        <p><strong>Objective:</strong> Solve stoichiometry problems involving gas volumes.</p>
+        <p><strong>In class:</strong> Mixed sets; discuss non-STP caveats.</p>
+        <p><strong>Homework:</strong> Gas stoich problem set.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — liters of CO₂ from given grams.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 28 — Lab: Gas Collection</h4>
+        <p><strong>Objective:</strong> Generate and collect a gas; compare to theoretical volume.</p>
+        <p><strong>In class:</strong> Example: NaHCO₃ + HCl → CO₂↑; water displacement collection.</p>
+        <img class="inline-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hydrogen_generation.png/640px-Hydrogen_generation.png" alt="Gas generation and collection apparatus">
+        <p><strong>Homework:</strong> Calculate theoretical vs collected volume; % error.</p>
+        <p><strong>Checkpoint:</strong> <em>Lab check</em> — volume analysis complete.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 29 — Project Launch: “Stoichiometry in Industry”</h4>
+        <p><strong>Objective:</strong> Understand project prompt, deliverables, and rubric.</p>
+        <p><strong>In class:</strong> Launch a real-world optimization project (e.g., producing baking soda tablets, fertilizer mixing, or neutralizing wastewater) using stoichiometry to justify material needs and costs.</p>
+        <p><strong>Homework:</strong> Project topic proposal + 2 sources.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — submit topic + initial plan.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 30 — Project Research & Planning</h4>
+        <p><strong>Objective:</strong> Gather data (reaction equations, purities, constraints) and outline approach.</p>
+        <p><strong>In class:</strong> Work session; teacher conferences; example budgets.</p>
+        <p><strong>Homework:</strong> Outline + preliminary calculations (materials needed).</p>
+        <p><strong>Checkpoint:</strong> <em>Progress check</em> — outline verified.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 7 -->
+    <article class="week" id="week7">
+      <h3>Week 7 (Days 31–35) — Project Work & Presentations</h3>
+      <p><span class="tag">Focus</span> Drafting, source evaluation, calculation checks, visual design, presentations.</p>
+
+      <div class="day-card">
+        <h4>Day 31 — Source Evaluation & Calculations Audit</h4>
+        <p><strong>Objective:</strong> Evaluate sources; verify stoichiometry and unit consistency.</p>
+        <p><strong>In class:</strong> CRAAP test; peer calculation check.</p>
+        <p><strong>Homework:</strong> Fix issues found.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one improvement logged.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 32 — Drafting & Visuals</h4>
+        <p><strong>Objective:</strong> Draft report/presentation; create clear tables/figures.</p>
+        <p><strong>In class:</strong> Work session; exemplars.</p>
+        <p><strong>Homework:</strong> Draft due next class.</p>
+        <p><strong>Checkpoint:</strong> <em>Draft submitted</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 33 — Peer Review & Revision</h4>
+        <p><strong>Objective:</strong> Strengthen clarity, reasoning, and quantitative justification.</p>
+        <p><strong>In class:</strong> Structured peer review; checklist for accuracy.</p>
+        <p><strong>Homework:</strong> Revise.</p>
+        <p><strong>Checkpoint:</strong> <em>Revision plan approved</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 34 — Presentations (Part 1)</h4>
+        <p><strong>Objective:</strong> Present optimization plan with data-driven decisions.</p>
+        <p><strong>In class:</strong> Student presentations; Q&A.</p>
+        <p><strong>Homework:</strong> Reflection on feedback.</p>
+        <p><strong>Checkpoint:</strong> <em>Presentation rubric scoring</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 35 — Presentations (Part 2)</h4>
+        <p><strong>Objective:</strong> Continue presentations; compare strategies across teams.</p>
+        <p><strong>In class:</strong> Presentations continued; panel discussion on tradeoffs (cost, waste, time).</p>
+        <p><strong>Homework:</strong> Final reflection.</p>
+        <p><strong>Checkpoint:</strong> <em>Presentation rubric scoring</em>.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 8 -->
+    <article class="week" id="week8">
+      <h3>Week 8 (Days 36–40) — Assessment, Review & Extensions</h3>
+      <p><span class="tag">Focus</span> Project submission; cumulative stoichiometry assessment; extensions/enrichment.</p>
+
+      <div class="day-card">
+        <h4>Day 36 — Project Submission & Debrief</h4>
+        <p><strong>Objective:</strong> Submit final project; reflect on EQs.</p>
+        <p><strong>In class:</strong> Debrief: What limited your process? How did you optimize?</p>
+        <p><strong>Homework:</strong> Study guide start.</p>
+        <p><strong>Checkpoint:</strong> <em>Project collected</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 37 — Cumulative Review (Stoichiometry)</h4>
+        <p><strong>Objective:</strong> Review LR, % yield, gas & solution stoichiometry.</p>
+        <p><strong>In class:</strong> Stations by topic; teacher mini-clinics.</p>
+        <p><strong>Homework:</strong> Mixed review set.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — identify weakest sub-skill.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 38 — Unit 2 Exam</h4>
+        <p><strong>Objective:</strong> Demonstrate mastery of Unit 2 learning goals.</p>
+        <p><strong>In class:</strong> Written exam with problem solving & short explanations.</p>
+        <p><strong>Homework:</strong> None (exam day).</p>
+        <p><strong>Checkpoint:</strong> <em>Formal assessment — Exam</em>.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 39 — Exam Corrections & Reteach</h4>
+        <p><strong>Objective:</strong> Address misconceptions; improve accuracy.</p>
+        <p><strong>In class:</strong> Error analysis; reteach groups.</p>
+        <p><strong>Homework:</strong> Corrections due next class.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one fixed misconception.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 40 — Enrichment: Process Design Challenge</h4>
+        <p><strong>Objective:</strong> Extend stoichiometry to process constraints (time, purity, cost).</p>
+        <p><strong>In class:</strong> Teams propose process tweaks; justify with calculations.</p>
+        <p><strong>Homework:</strong> Reflection paragraph.</p>
+        <p><strong>Checkpoint:</strong> <em>Share-out</em> — best tweak wins.</p>
+      </div>
+    </article>
+
+    <!-- WEEK 9 -->
+    <article class="week" id="week9">
+      <h3>Week 9 (Days 41–45) — Bridge to Unit 3</h3>
+      <p><span class="tag">Focus</span> Connecting stoichiometry to energy and reaction progress (preview of Unit 3).</p>
+
+      <div class="day-card">
+        <h4>Day 41 — Conservation & Energy Accounting (Concept Bridge)</h4>
+        <p><strong>Objective:</strong> Connect conservation of mass to energy changes conceptually.</p>
+        <p><strong>In class:</strong> Concept map; examples where yield/energy interplay matters.</p>
+        <p><strong>Homework:</strong> Reading: intro to thermochemistry (preview).</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — where does energy show up?</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 42 — Rate Factors (Temperature/Concentration)</h4>
+        <p><strong>Objective:</strong> Qualitatively describe how T and concentration affect rate.</p>
+        <p><strong>In class:</strong> Simple demos; tie to throughput in processes.</p>
+        <p><strong>Homework:</strong> Short problems & reflections.</p>
+        <p><strong>Checkpoint:</strong> <em>Quick check</em> — predict rate changes.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 43 — Multi-Step Synthesis Planning</h4>
+        <p><strong>Objective:</strong> Outline stoichiometry across sequential steps.</p>
+        <p><strong>In class:</strong> Chain yield problems; discuss compounding losses.</p>
+        <p><strong>Homework:</strong> Multi-step practice.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — compute overall yield.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 44 — Comprehensive Review & Transition</h4>
+        <p><strong>Objective:</strong> Solidify Unit 2 skills before Unit 3.</p>
+        <p><strong>In class:</strong> Review circuit; peer teaching.</p>
+        <p><strong>Homework:</strong> Unit 3 preview questions.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — key Unit 2 → Unit 3 link.</p>
+      </div>
+
+      <div class="day-card">
+        <h4>Day 45 — Reflection & Unit 3 Preview</h4>
+        <p><strong>Objective:</strong> Reflect on learning; preview thermochemistry/kinetics.</p>
+        <p><strong>In class:</strong> Reflection; sneak-peek demo (endothermic/exothermic).</p>
+        <p><strong>Homework:</strong> Bring materials list for next unit.</p>
+        <p><strong>Checkpoint:</strong> <em>Exit ticket</em> — one question for Unit 3.</p>
+      </div>
+    </article>
+
+    <!-- End-of-Unit Project Callout -->
+    <section class="callout">
+      <strong>End-of-Unit Project: “Stoichiometry in Industry”</strong><br/>
+      Teams design and justify a small-scale production plan (e.g., neutralizing acid waste, producing a set mass of product, or compounding a fertilizer). They must show balanced equations,
+      limiting reactant analysis, materials and cost estimates, predicted vs. target yield, and optimizations to minimize waste.
+      <div class="mini">
+        Standards alignment:
+        <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-7-matter-and-its-interactions">HS-PS1-7</a>,
+        <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-3-matter-and-its-interactions">HS-PS1-3</a>,
+        <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions">HS-PS1-5</a>.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Winslow Township High School | Honors Chemistry — Joseph Kuppler</p>
+  </footer>
+</body>
+</html>
