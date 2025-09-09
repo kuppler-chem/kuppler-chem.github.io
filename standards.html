@@ -1,54 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standards — Honors Chemistry</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NGSS Standards – Honors Chemistry</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* small, page-local helpers using theme vars */
+    .std-card{background:#fff;border:1px solid var(--border-gray);border-left:6px solid var(--winslow-green);
+      border-radius:10px;padding:14px 16px;margin:12px 0}
+    .std-card h3{margin:0 0 6px}
+    .std-meta{font-size:.98rem;margin:6px 0}
+    .unit-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .unit-tag{display:inline-block;font-size:12px;padding:2px 10px;border:1px solid var(--winslow-green);
+      color:var(--winslow-green);border-radius:999px;text-decoration:none}
+    .mini-muted{font-size:.95rem;opacity:.85}
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Course Standards</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="unit1.html">Unit 1</a></li>
-        <li><a href="unit2.html">Unit 2</a></li>
-        <li><a href="unit3.html">Unit 3</a></li>
-        <li><a href="unit4.html">Unit 4</a></li>
-        <li><a aria-current="page" href="standards.html">Standards</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>NGSS Standards</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="unit1.html">Unit 1</a></li>
+      <li><a href="unit2.html">Unit 2</a></li>
+      <li><a href="unit3.html">Unit 3</a></li>
+      <li><a href="unit4.html">Unit 4</a></li>
+      <li><a aria-current="page" href="standards.html">Standards</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section class="unit-banner">
-      <img src="assets/wths-logo.png" alt="WTHS Logo">
-      <div>
-        <h2>NGSS Standards Covered</h2>
-        <p>
-          These are the Next Generation Science Standards (NGSS) and New Jersey Science Standards 
-          that guide this Honors Chemistry course.
-        </p>
-      </div>
-    </section>
-
-    <div class="std-strip mini">
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-1-matter-and-its-interactions">HS-PS1-1</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-2-matter-and-its-interactions">HS-PS1-2</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-3-matter-and-its-interactions">HS-PS1-3</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-4-matter-and-its-interactions">HS-PS1-4</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions">HS-PS1-5</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-6-matter-and-its-interactions">HS-PS1-6</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-7-matter-and-its-interactions">HS-PS1-7</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-8-matter-and-its-interactions">HS-PS1-8</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-1-energy">HS-PS3-1</a>
-      <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-4-energy">HS-PS3-4</a>
+<main>
+  <section class="unit-banner">
+    <img src="assets/wths-logo.png" alt="WTHS Logo">
+    <div>
+      <h2>Course Alignment to NGSS</h2>
+      <p class="mini">
+        Below are the high school performance expectations (PEs) and brief, family-friendly descriptions.
+        Each card shows where it is addressed in our four units.
+      </p>
+      <p class="mini mini-muted">Click any code to open the official NGSS page in a new tab.</p>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Winslow Township High School | Honors Chemistry — Joseph Kuppler</p>
-  </footer>
+  <!-- HS-PS1-1 -->
+  <article class="std-card" id="HS-PS1-1">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-1-matter-and-its-interactions">HS-PS1-1</a> — Use the periodic table to predict properties</h3>
+    <p class="std-meta">Students use periodic patterns and electron structure to make predictions about relative properties and reactivity.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit1.html">Unit 1</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-2 -->
+  <article class="std-card" id="HS-PS1-2">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-2-matter-and-its-interactions">HS-PS1-2</a> — Structure relates to properties</h3>
+    <p class="std-meta">Explain how atomic/molecular structure connects to observable properties and behaviors.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit1.html">Unit 1</a>
+      <a class="unit-tag" href="unit2.html">Unit 2</a>
+      <a class="unit-tag" href="unit4.html">Unit 4</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-3 -->
+  <article class="std-card" id="HS-PS1-3">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-3-matter-and-its-interactions">HS-PS1-3</a> — Evidence of chemical change</h3>
+    <p class="std-meta">Plan and conduct investigations that compare properties before/after interactions to support claims.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit2.html">Unit 2</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-4 -->
+  <article class="std-card" id="HS-PS1-4">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-4-matter-and-its-interactions">HS-PS1-4</a> — Energy changes during reactions (models)</h3>
+    <p class="std-meta">Develop models to illustrate energy changes and distinguish endothermic/exothermic processes.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit3.html">Unit 3</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-5 -->
+  <article class="std-card" id="HS-PS1-5">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-5-matter-and-its-interactions">HS-PS1-5</a> — Conditions and reaction rates</h3>
+    <p class="std-meta">Explain how changing temperature or concentration affects reaction rate using evidence and principles.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit2.html">Unit 2</a>
+      <a class="unit-tag" href="unit3.html">Unit 3</a>
+      <a class="unit-tag" href="unit4.html">Unit 4</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-6 -->
+  <article class="std-card" id="HS-PS1-6">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-6-matter-and-its-interactions">HS-PS1-6</a> — Refine a chemical system</h3>
+    <p class="std-meta">Change conditions to improve product formation or meet a specified target (yield, purity, cost, safety).</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit3.html">Unit 3</a>
+      <a class="unit-tag" href="unit4.html">Unit 4</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-7 -->
+  <article class="std-card" id="HS-PS1-7">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-7-matter-and-its-interactions">HS-PS1-7</a> — Conservation of atoms (and mass)</h3>
+    <p class="std-meta">Use math representations to support that atoms—and therefore mass—are conserved in reactions.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit2.html">Unit 2</a>
+      <a class="unit-tag" href="unit4.html">Unit 4</a>
+    </div>
+  </article>
+
+  <!-- HS-PS1-8 -->
+  <article class="std-card" id="HS-PS1-8">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-8-matter-and-its-interactions">HS-PS1-8</a> — Nuclear processes (qualitative)</h3>
+    <p class="std-meta">Communicate information about radioactivity, fission, and fusion at a qualitative level.</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit1.html">Unit 1</a>
+    </div>
+  </article>
+
+  <!-- HS-PS3-1 -->
+  <article class="std-card" id="HS-PS3-1">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-1-energy">HS-PS3-1</a> — Model energy change in a system</h3>
+    <p class="std-meta">Create/use models to calculate and track energy changes in systems (e.g., calorimetry).</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit3.html">Unit 3</a>
+    </div>
+  </article>
+
+  <!-- HS-PS3-4 -->
+  <article class="std-card" id="HS-PS3-4">
+    <h3><a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps3-4-energy">HS-PS3-4</a> — Design a device for energy conversion/transfer</h3>
+    <p class="std-meta">Design and/or refine a device that converts energy or controls energy transfer (e.g., hot/cold packs).</p>
+    <div class="unit-tags">
+      <a class="unit-tag" href="unit3.html">Unit 3</a>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2025 Winslow Township High School | Honors Chemistry — Joseph Kuppler</p>
+</footer>
 </body>
 </html>
