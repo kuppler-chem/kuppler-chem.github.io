@@ -6,19 +6,20 @@
   <title>Unit 1: Matter & Atomic Structure</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Minimal additions for collapsible weeks */
-    details.week { background:#fff; border:1px solid #e6e6e6; border-radius:12px; margin:12px 0; padding:6px 10px; }
-    details.week[open] { border-color:#cfd7d2; }
-    details.week > summary { cursor:pointer; list-style:none; font-weight:600; color:var(--winslow-green); display:flex; align-items:center; gap:8px; }
-    details.week > summary::marker { display:none; }
-    details.week > summary span.chev { transition: transform .2s ease; display:inline-block; }
-    details.week[open] > summary span.chev { transform: rotate(90deg); }
-    .inline-img { max-width:100%; height:auto; border-radius:10px; border:1px solid #e6e6e6; margin:6px 0; }
-    .eq-banner { border-left:6px solid var(--winslow-green); background:#f6faf8; padding:12px 14px; border-radius:10px; margin:14px 0; }
-    .eq-items { margin:6px 0 0 18px; }
-    .std-strip a { margin-right:10px; }
-    .day-card { background:#fff; border:1px solid #eeeeee; border-radius:10px; padding:10px 12px; margin:10px 0; }
-    .tag { background:#eaf3ef; border:1px solid #cfe0d6; color:#2f6b4f; font-size:12px; padding:2px 8px; border-radius:999px; }
+    /* Collapsible weeks */
+    details.week{background:#fff;border:1px solid #e6e6e6;border-radius:12px;margin:12px 0;padding:6px 10px}
+    details.week[open]{border-color:#cfd7d2}
+    details.week > summary{cursor:pointer;list-style:none;font-weight:600;color:var(--winslow-green);display:flex;align-items:center;gap:8px}
+    details.week > summary::-webkit-details-marker{display:none}
+    details.week > summary .chev{transition:transform .2s ease;display:inline-block}
+    details.week[open] > summary .chev{transform:rotate(90deg)}
+    .inline-img{max-width:100%;height:auto;border-radius:10px;border:1px solid #e6e6e6;margin:6px 0}
+    .eq-banner{border-left:6px solid var(--winslow-green);background:#f6faf8;padding:12px 14px;border-radius:10px;margin:14px 0}
+    .eq-items{margin:6px 0 0 18px}
+    .std-strip a{margin-right:10px}
+    .day-card{background:#fff;border:1px solid #eeeeee;border-radius:10px;padding:10px 12px;margin:10px 0}
+    .tag{background:#eaf3ef;border:1px solid #cfe0d6;color:#2f6b4f;font-size:12px;padding:2px 8px;border-radius:999px}
+    :root{--winslow-green:#2f6b4f} /* fallback in case styles.css is missing the variable */
   </style>
 </head>
 <body>
@@ -39,7 +40,9 @@
   <main>
     <!-- Unit Overview -->
     <section class="unit-banner">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bohr-atom-Pb.svg/240px-Bohr-atom-Pb.svg.png" alt="Atom icon">
+      <img class="inline-img"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bohr-atom-Pb.svg/480px-Bohr-atom-Pb.svg.png"
+           alt="Atom icon">
       <div>
         <h2 style="margin:4px 0 6px;">Unit Overview</h2>
         <p class="mini">
@@ -64,7 +67,6 @@
         <li><strong>EQ1:</strong> How do models of atomic structure and periodic patterns help us explain and predict the properties of matter?</li>
         <li><strong>EQ2:</strong> How do measurement choices (tools, precision, error) impact the quality and reliability of scientific conclusions?</li>
       </ol>
-
       <div class="eq-links">
         <p><strong>Explore:</strong></p>
         <ul>
@@ -75,7 +77,7 @@
       </div>
     </section>
 
-    <!-- ===== Collapsible Weekly Breakdown (all 45 days preserved) ===== -->
+    <!-- ===== Collapsible Weekly Breakdown (all 45 days) ===== -->
 
     <!-- WEEK 1 -->
     <details class="week" id="week1">
@@ -218,7 +220,7 @@
     <!-- WEEK 4 -->
     <details class="week" id="week4">
       <summary><span class="chev">▶</span> Week 4 (Days 16–20) — Electron Structure (Honors Depth, no VSEPR)</summary>
-      <p><span class="tag">Focus</span> Bohr → shells/subshells, configurations (spdf), periodic trends; <em>no VSEPR</em> per your scope.</p>
+      <p><span class="tag">Focus</span> Bohr → shells/subshells, configurations (spdf), periodic trends; <em>no VSEPR</em> per scope.</p>
 
       <div class="day-card">
         <h4>Day 16 — Bohr Model & Spectra</h4>
@@ -353,23 +355,25 @@
       </div>
     </details>
 
-    <!-- WEEK 7–9 (keep collapsed content) -->
+    <!-- WEEK 7 -->
     <details class="week" id="week7">
       <summary><span class="chev">▶</span> Week 7 (Days 31–35) — Cumulative Skills & Applications</summary>
       <div class="day-card"><p>Review labs/skills; mini-investigations; targeted practice.</p></div>
     </details>
 
+    <!-- WEEK 8 -->
     <details class="week" id="week8">
       <summary><span class="chev">▶</span> Week 8 (Days 36–40) — Project Work: Materials ID</summary>
       <div class="day-card"><p>Launch & work time for Unit 1 project (real-world materials ID using data & error analysis).</p></div>
     </details>
 
+    <!-- WEEK 9 -->
     <details class="week" id="week9">
       <summary><span class="chev">▶</span> Week 9 (Days 41–45) — Presentations & Transition</summary>
       <div class="day-card"><p>Presentations; reflection; bridge to Unit 2 stoichiometry.</p></div>
     </details>
 
-    <!-- End-of-Unit Project (Unit 1) -->
+    <!-- End-of-Unit Project -->
     <section class="callout">
       <strong>End-of-Unit Project: “What’s This Stuff?” (Materials ID)</strong><br/>
       Students use measured properties (density, conductivity, qualitative tests) and error analysis to argue for the identity of unknown materials,
