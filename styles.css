@@ -1,127 +1,133 @@
-/* ========== Global Theme Variables ========== */
-:root {
-  --winslow-green: #2f6b4f;   /* Primary deep green */
-  --winslow-light: #f6faf8;   /* Light accent background */
-  --text-dark: #222;
-  --text-light: #fff;
-  --border-gray: #e6e6e6;
+/* ========== Theme Variables ========== */
+:root{
+  --winslow-green:#2f6b4f;   /* Primary deep green */
+  --winslow-light:#f6faf8;   /* Light accent background */
+  --text-dark:#222;
+  --text-light:#fff;
+  --border-gray:#e6e6e6;
+  --maxw: 1100px;            /* Site max width */
+  --padx: 16px;              /* Horizontal padding */
 }
 
-/* ========== General Resets ========== */
-body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fafafa;
-  color: var(--text-dark);
-  line-height: 1.6;
+/* ========== Base ========== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--text-dark);
+  background:#fafafa;
+  line-height:1.6;
 }
 
-h1, h2, h3, h4 {
-  color: var(--winslow-green);
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
+/* Centered content band, no HTML changes required */
+header > *, main, footer > *{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding-left:var(--padx);
+  padding-right:var(--padx);
 }
 
-/* ========== Header & Navigation ========== */
-header {
-  background: var(--winslow-green);
-  color: var(--text-light);
-  padding: 16px;
+/* ========== Header / Nav ========== */
+header{
+  background:var(--winslow-green);
+  color:var(--text-light);
+  padding-top:16px;
+  padding-bottom:14px;
+  box-shadow:0 1px 2px rgba(0,0,0,.08);
+}
+header h1{margin:0;font-size:1.8rem}
+header h2{margin:.25rem 0 0;font-weight:500; opacity:.95}
+
+nav ul{
+  display:flex; flex-wrap:wrap; gap:14px;
+  list-style:none; margin:10px 0 0; padding:0;
+}
+nav a{
+  color:var(--text-light); text-decoration:none; font-weight:500;
+  padding:2px 0; border-bottom:2px solid transparent; transition:opacity .15s ease, border-color .15s ease;
+}
+nav a:hover{opacity:.9; border-color:rgba(255,255,255,.6)}
+nav a[aria-current="page"]{border-color:#fff}
+
+/* ========== Sections / Banners / Callouts ========== */
+.unit-banner{
+  display:flex; align-items:center; gap:14px;
+  background:var(--winslow-light);
+  border-radius:12px; margin:16px 0; padding:16px;
+  border:1px solid #dfe7e2;
+}
+.unit-banner img{
+  max-width:120px; height:auto;
+  border-radius:10px; border:1px solid var(--border-gray);
+  background:#fff;
+}
+.eq-banner{
+  border-left:6px solid var(--winslow-green);
+  background:var(--winslow-light);
+  padding:14px; border-radius:10px; margin:18px 0;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.8em;
+/* "Standards for Unit X" strip */
+.std-strip{
+  display:flex; flex-wrap:wrap; gap:10px 12px;
+  align-items:center; background:#fff; border:1px solid var(--border-gray);
+  border-radius:10px; padding:10px 12px; margin:12px 0;
+}
+.std-strip strong{color:var(--winslow-green)}
+.std-strip a{
+  text-decoration:none; color:var(--winslow-green);
+  border:1px solid var(--winslow-green); border-radius:999px; padding:2px 10px; font-size:.92rem;
+}
+.std-strip a:hover{background:var(--winslow-green); color:#fff}
+
+/* ========== Cards / Images / Tags ========== */
+.day-card{
+  background:#fff; border:1px solid var(--border-gray);
+  border-radius:10px; padding:12px 14px; margin:12px 0;
+  box-shadow:0 1px 3px rgba(0,0,0,.05);
+}
+.day-card h4{margin:.2rem 0 .4rem}
+.inline-img{
+  max-width:100%; height:auto; border-radius:10px;
+  border:1px solid var(--border-gray); background:#fff; display:block;
+  margin:6px 0;
+}
+.tag{
+  display:inline-block; background:#eaf3ef; border:1px solid #cfe0d6;
+  color:var(--winslow-green); font-size:12px; padding:2px 8px; border-radius:999px;
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
+/* ========== Collapsible Weeks (applies to Units 1–4) ========== */
+details.week{
+  background:#fff; border:1px solid var(--border-gray); border-radius:12px;
+  margin:12px 0; padding:6px 10px;
 }
-
-nav li {
-  margin-right: 18px;
+details.week[open]{border-color:#cfd7d2}
+details.week > summary{
+  cursor:pointer; list-style:none; font-weight:600; color:var(--winslow-green);
+  display:flex; align-items:center; gap:8px;
 }
+details.week > summary::-webkit-details-marker{display:none}
+details.week > summary .chev{transition:transform .2s ease; display:inline-block}
+details.week[open] > summary .chev{transform:rotate(90deg)}
 
-nav a {
-  text-decoration: none;
-  color: var(--text-light);
-  font-weight: 500;
-  transition: opacity 0.2s ease;
-}
-
-nav a:hover,
-nav a[aria-current="page"] {
-  text-decoration: underline;
-  opacity: 0.85;
-}
-
-/* ========== Banners & Callouts ========== */
-.unit-banner {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 16px;
-  background: var(--winslow-light);
-  border-radius: 12px;
-  margin: 16px 0;
-}
-
-.unit-banner img {
-  max-width: 120px;
-  border-radius: 10px;
-  border: 1px solid var(--border-gray);
-}
-
-.eq-banner {
-  border-left: 6px solid var(--winslow-green);
-  background: var(--winslow-light);
-  padding: 14px;
-  border-radius: 10px;
-  margin: 18px 0;
-}
-
-.callout {
-  background: var(--winslow-light);
-  border-left: 5px solid var(--winslow-green);
-  padding: 12px 16px;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-
-/* ========== Cards & Day Layout ========== */
-.day-card {
-  background: #fff;
-  border: 1px solid var(--border-gray);
-  border-radius: 10px;
-  padding: 12px 14px;
-  margin: 12px 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-.day-card h4 {
-  margin-top: 0;
-}
-
-.tag {
-  display: inline-block;
-  background: #eaf3ef;
-  border: 1px solid #cfe0d6;
-  color: var(--winslow-green);
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 999px;
+/* ========== Home Page Cards ========== */
+.unit-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:16px; margin:12px 0 24px;
 }
 
 /* ========== Footer ========== */
-footer {
-  background: var(--winslow-green);
-  color: var(--text-light);
-  text-align: center;
-  padding: 12px;
-  margin-top: 24px;
+footer{
+  background:var(--winslow-green); color:var(--text-light);
+  margin-top:24px; padding:12px 0;
+}
+footer p{margin:0; text-align:center}
+
+/* ========== Small Screen Tweaks ========== */
+@media (max-width: 640px){
+  header h1{font-size:1.5rem}
+  .unit-banner{flex-direction:column; align-items:flex-start}
+  .unit-banner img{max-width:100px}
 }
