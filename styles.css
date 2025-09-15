@@ -206,3 +206,6 @@ footer p{ margin:0 }
   .unit-banner{ flex-direction:column; align-items:flex-start }
   .unit-banner img{ max-width:100px }
 }
+/* HOTFIX: center only the page titles above the nav */
+header h1 { text-align: center; }
+
