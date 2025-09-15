@@ -1,176 +1,208 @@
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ========== THEME VARIABLES ========== */
+:root{
+  --winslow-green:#2f6b4f;   /* primary */
+  --winslow-light:#f6faf8;   /* soft background */
+  --text-dark:#222;
+  --text-light:#fff;
+  --border-gray:#e6e6e6;
+  --maxw:1100px;
+  --padx:16px;
 }
 
-/* Body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background: #ffffff;
-  color: #222;
-  margin: 0;
+/* ========== BASE / LAYOUT ========== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--text-dark);
+  background:#fafafa;
+  line-height:1.6;
 }
 
-/* Header */
-header {
-  background: #0b5e3a; /* Winslow green */
-  color: #ffffff;
-  padding: 12px 0;
-  text-align: center;
+/* Centered content band without extra HTML wrappers */
+header > *, main, footer > *{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding-left:var(--padx);
+  padding-right:var(--padx);
 }
 
-header h1 {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 2.2em;
-  font-weight: bold;
-  color: #ffffff;
+/* ========== GLOBAL TYPE & LINKS ========== */
+h1,h2,h3,h4{color:var(--winslow-green);margin-top:.5em;margin-bottom:.3em}
+
+a{
+  color:var(--winslow-green);
+  text-decoration:none;
+  transition:color .15s ease, text-decoration-color .15s ease, opacity .15s ease;
+}
+a:hover{ text-decoration:underline }
+
+/* Header/footer links stay white */
+header a, footer a{ color:var(--text-light) }
+footer a:hover{ opacity:.9 }
+
+/* ========== HEADER & NAV ========== */
+header{
+  background:var(--winslow-green);
+  color:var(--text-light);
+  padding-top:18px;
+  padding-bottom:12px;
+  box-shadow:0 1px 2px rgba(0,0,0,.08);
 }
 
-/* Nav */
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 8px 0 0 0;
-  padding: 0;
+/* Title visible (white on green), centered */
+header h1, header h2, header h3, header h4{
+  color:var(--text-light);       /* override global green for header */
+  margin:0;
+  text-align:center;             /* force center */
+  width:100%;                    /* ensure full-width centering */
+}
+header h1{
+  font-size:1.8rem;
+  font-weight:600;
+  letter-spacing:.2px;
 }
 
-header nav ul li {
-  margin: 0 12px;
+/* Centered, larger nav under title */
+nav ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:22px;
+  list-style:none;
+  margin:10px 0 0;
+  padding:0;
+  font-size:1.1rem;   /* larger nav text */
+}
+nav li{ margin:0 }
+nav a{
+  border-bottom:2px solid transparent;
+  padding:2px 0;
+}
+nav a:hover{ opacity:.9; border-color:rgba(255,255,255,.6) }
+nav a[aria-current="page"]{ border-color:#fff }
+
+/* ========== BANNERS / CALLOUTS ========== */
+.unit-banner{
+  display:flex; align-items:center; gap:14px;
+  background:var(--winslow-light);
+  border-radius:12px; margin:16px 0; padding:16px;
+  border:1px solid #dfe7e2;
+}
+.unit-banner img{
+  max-width:120px; height:auto;
+  border-radius:10px; border:1px solid var(--border-gray);
+  background:#fff;
 }
 
-header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
+.eq-banner{
+  border-left:6px solid var(--winslow-green);
+  background:var(--winslow-light);
+  padding:14px; border-radius:10px; margin:18px 0;
 }
 
-header nav ul li a:hover,
-header nav ul li a[aria-current="page"] {
-  text-decoration: underline;
+/* Essential Questions list: show only EQ1/EQ2 labels (no extra numbers) */
+.eq-items{
+  list-style:none;
+  margin:6px 0 0;
+  padding-left:0;
 }
 
-/* Unit Banner */
-.unit-banner {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: #f2f8f5;
-  padding: 15px;
-  border-bottom: 2px solid #0b5e3a;
+/* Per-unit standards strip */
+.std-strip{
+  display:flex; flex-wrap:wrap; gap:10px 12px;
+  align-items:center; background:#fff; border:1px solid var(--border-gray);
+  border-radius:10px; padding:10px 12px; margin:12px 0;
+}
+.std-strip strong{ color:var(--winslow-green) }
+.std-strip a{
+  color:var(--winslow-green);
+  border:1px solid var(--winslow-green);
+  border-radius:999px; padding:2px 10px; font-size:.92rem;
+}
+.std-strip a:hover{
+  background:var(--winslow-green); color:#fff; text-decoration:none;
 }
 
-.unit-banner img.inline-img {
-  max-width: 240px;
-  border-radius: 8px;
+/* ========== CARDS / IMAGES / TAGS ========== */
+.day-card{
+  background:#fff; border:1px solid var(--border-gray);
+  border-radius:10px; padding:12px 14px; margin:12px 0;
+  box-shadow:0 1px 3px rgba(0,0,0,.05);
+}
+.day-card h4{ margin:.2rem 0 .4rem }
+
+.inline-img{
+  max-width:100%; height:auto; border-radius:10px;
+  border:1px solid var(--border-gray); background:#fff; display:block;
+  margin:6px 0;
 }
 
-.unit-banner h2 {
-  color: #0b5e3a;
-  margin-bottom: 8px;
+.tag{
+  display:inline-block; background:#eaf3ef; border:1px solid #cfe0d6;
+  color:var(--winslow-green); font-size:12px; padding:2px 8px; border-radius:999px;
 }
 
-/* Standards Strip */
-.std-strip {
-  background: #0b5e3a;
-  color: #ffffff;
-  padding: 6px 12px;
-  margin: 15px 0;
+/* ========== COLLAPSIBLE WEEKS (Units 1–4) ========== */
+details.week{
+  background:#fff; border:1px solid var(--border-gray); border-radius:12px;
+  margin:12px 0; padding:6px 10px;
+}
+details.week[open]{ border-color:#cfd7d2 }
+details.week > summary{
+  cursor:pointer; list-style:none; font-weight:600; color:var(--winslow-green);
+  display:flex; align-items:center; gap:8px;
+}
+details.week > summary::-webkit-details-marker{ display:none }
+details.week > summary .chev{ transition:transform .2s ease; display:inline-block }
+details.week[open] > summary .chev{ transform:rotate(90deg) }
+
+/* ========== HOME PAGE GRID ========== */
+.unit-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:16px; margin:12px 0 24px;
 }
 
-.std-strip a {
-  color: #ffdd57;
-  margin-left: 8px;
-  text-decoration: none;
+/* ========== STANDARDS PAGE CARDS ========== */
+.std-card{
+  background:#fff; border:1px solid var(--border-gray); border-left:6px solid var(--winslow-green);
+  border-radius:10px; padding:14px 16px; margin:12px 0;
 }
+.std-card h3{ margin:0 0 6px }
+.std-meta{ font-size:.98rem; margin:6px 0 }
+.unit-tags{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px }
+.unit-tag{
+  display:inline-block; font-size:12px; padding:2px 10px;
+  border:1px solid var(--winslow-green); color:var(--winslow-green);
+  border-radius:999px; text-decoration:none;
+}
+.unit-tag:hover{ background:var(--winslow-green); color:#fff; text-decoration:none }
+.mini{ font-size:.95rem }
+.mini-muted{ font-size:.95rem; opacity:.85 }
 
-.std-strip a:hover {
-  text-decoration: underline;
+/* ========== FOOTER ========== */
+footer{
+  background:var(--winslow-green);
+  color:var(--text-light);
+  margin-top:24px;
+  padding:12px 0;
+  display:flex;                 /* ensure centering */
+  justify-content:center;
+  align-items:center;
 }
+footer > *{
+  max-width:var(--maxw);
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+}
+footer p{ margin:0 }
 
-/* Essential Questions */
-.eq-banner {
-  background: #eaf4ee;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-left: 5px solid #0b5e3a;
-}
-
-.eq-banner h2 {
-  color: #0b5e3a;
-  margin-bottom: 8px;
-}
-
-.eq-items {
-  margin-left: 18px;
-  margin-bottom: 12px;
-}
-
-.eq-items li {
-  margin-bottom: 8px;
-}
-
-.eq-links ul {
-  margin-left: 20px;
-  list-style-type: disc;
-}
-
-/* Collapsible Weeks */
-details.week {
-  margin: 12px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 8px;
-  background: #fafafa;
-}
-
-details.week summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #0b5e3a;
-  margin: -8px;
-  padding: 8px;
-}
-
-details.week summary:hover {
-  background: #e6f1eb;
-}
-
-.day-card {
-  border-top: 1px solid #ddd;
-  padding: 8px 0;
-}
-
-.day-card h4 {
-  margin-bottom: 4px;
-  color: #0b5e3a;
-}
-
-/* Callout Boxes */
-.callout {
-  background: #f2f8f5;
-  border-left: 5px solid #0b5e3a;
-  padding: 12px;
-  margin: 20px 0;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background: #0b5e3a;
-  color: #ffffff;
-  padding: 12px;
-  margin-top: 20px;
-}
-
-footer a {
-  color: #ffdd57;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
+/* ========== SMALL SCREEN TWEAKS ========== */
+@media (max-width:640px){
+  header h1{ font-size:1.5rem }
+  nav ul{ gap:16px; font-size:1.05rem }
+  .unit-banner{ flex-direction:column; align-items:flex-start }
+  .unit-banner img{ max-width:100px }
 }
