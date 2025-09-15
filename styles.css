@@ -206,8 +206,27 @@ footer p{ margin:0 }
   .unit-banner{ flex-direction:column; align-items:flex-start }
   .unit-banner img{ max-width:100px }
 }
-/* HOTFIX: center only the page titles above the nav */
-header h1 { text-align: center !important; }
+/* ---- HOTFIX: center page titles above the nav, no other layout changes ---- */
+header h1 {
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  margin: 0.3rem auto 0.6rem auto !important;
+}
+
+/* If any old float rules exist, neutralize them just for header elements */
+header h1,
+header nav {
+  float: none !important;
+}
+
+/* Ensure nav stays horizontally centered under the title */
+header nav ul {
+  display: flex;                 /* keeps links in a row */
+  justify-content: center !important;
+}
+
+
 
 
 
