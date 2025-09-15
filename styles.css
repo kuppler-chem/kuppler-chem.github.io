@@ -207,5 +207,7 @@ footer p{ margin:0 }
   .unit-banner img{ max-width:100px }
 }
 /* HOTFIX: center only the page titles above the nav */
-header h1 { text-align: center; }
+header h1 { text-align: center !important; }
+
+
 
