@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Unit 1: Introduction to Chemistry, Atomic Theory, and Naming Compounds</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Unit 1: Foundations of Chemistry</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <header>
-  <h1>Unit 1: Introduction to Chemistry, Atomic Theory, and Naming Compounds</h1>
+  <h1>Unit 1: Foundations of Chemistry</h1>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -22,180 +22,466 @@
 </header>
 
 <main>
+  <!-- Keep this section unchanged; content here is the same structure used across units -->
   <section class="unit-banner">
-    <img class="inline-img" src="assets/unit1.jpg" alt="Intro Chemistry image">
+    <img class="inline-img" src="assets/unit1.jpg" alt="Foundations image">
     <div>
       <h2 style="margin:4px 0 6px;">Unit Overview</h2>
       <p class="mini">
-        Build foundations in measurement/precision, matter & classification, atomic structure (including nuclear basics),
-        periodic organization and bonding foundations, and develop fluency in <em>systematic naming</em> (ionic, covalent, acids, hydrates).
-        Culminates in a real-world project on why naming and structure matter for safety and communication.
+        Lab safety & measurement, quantitative skills (significant figures, dimensional analysis), matter & classification,
+        conservation of mass, atomic structure & history (Dalton→Bohr→quantum model), isotopes & average atomic mass,
+        periodic trends, ionic & covalent bonding, and introductory nomenclature. Concludes with a real-world project.
       </p>
     </div>
   </section>
 
   <div class="std-strip mini" aria-label="Standards for Unit 1">
-  <strong>Standards for Unit 1:</strong>
-  <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-1-matter-and-its-interactions">HS-PS1-1</a>
-  <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-2-matter-and-its-interactions">HS-PS1-2</a>
-  <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-3-matter-and-its-interactions">HS-PS1-3</a>
-  <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-8-matter-and-its-interactions">HS-PS1-8</a>
-</div>
+    <strong>Standards for Unit 1:</strong>
+    <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-1-matter-and-its-interactions">HS-PS1-1</a>
+    <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-2-matter-and-its-interactions">HS-PS1-2</a>
+    <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-3-matter-and-its-interactions">HS-PS1-3</a>
+    <a target="_blank" href="https://www.nextgenscience.org/pe/hs-ps1-8-matter-and-its-interactions">HS-PS1-8</a>
+  </div>
 
   <section class="eq-banner">
     <h2>Essential Questions</h2>
     <ol class="eq-items">
-      <li><strong>EQ1:</strong> How does the structure of an atom determine the physical and chemical properties of an element?</li>
-      <li><strong>EQ2:</strong> How do periodic trends help predict element behavior and reactivity?</li>
+      <li><strong>EQ1:</strong> How do models of the atom and periodic patterns help us predict and explain macroscopic chemical behavior?</li>
+      <li><strong>EQ2:</strong> How do measurement, error analysis, and conservation laws constrain and validate chemical explanations?</li>
     </ol>
-   <div class="eq-links">
-  <p><strong>Explore:</strong></p>
-  <ul>
-    <li><strong>Measurement & Significant Figures</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://www.nist.gov/pml/weights-and-measures/metric-si/si-units">NIST – SI Units</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.khanacademy.org/science/chemistry/chemistry-in-the-lab/measurement-significant-figures/a/significant-figures">Khan Academy – Significant Figures</a></li>
-    </ul>
-
-    <li><strong>Classification of Matter</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_(Zumdahl_and_Decoste)/01%3A_Chemical_Foundations/1.2%3A_Classification_of_Matter">LibreTexts – Classification of Matter</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.chem4kids.com/files/matter_intro.html">Chem4Kids – Matter Intro</a></li>
-    </ul>
-
-    <li><strong>Atomic Structure & Models</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html">PhET – Build an Atom</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.khanacademy.org/science/chemistry/atomic-structure-and-properties">Khan Academy – Atomic Structure & Properties</a></li>
-    </ul>
-
-    <li><strong>Isotopes & Average Atomic Mass</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://chem.libretexts.org/Courses/General_Chemistry/Map%3A_Chemistry_(OpenSTAX)/02%3A_Atoms_Molecules_and_Ions/2.07%3A_Isotopes_and_Atomic_Weights">LibreTexts – Isotopes & Atomic Weights</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.khanacademy.org/science/chemistry/atomic-structure-and-properties/atomic-structure/a/isotopes-and-average-atomic-mass">Khan Academy – Isotopes & Average Atomic Mass</a></li>
-    </ul>
-
-    <li><strong>Nuclear Basics</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://phet.colorado.edu/en/simulation/legacy/nuclear-physics">PhET – Nuclear Physics</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.nrc.gov/about-nrc/radiation/uses.html">NRC – Uses of Radioactive Materials</a></li>
-    </ul>
-
-    <li><strong>Periodic Table & Trends</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://www.rsc.org/periodic-table">RSC – Interactive Periodic Table</a></li>
-      <li><a target="_blank" rel="noopener" href="https://chem.libretexts.org/Courses/General_Chemistry/Map%3A_Chemistry_(OpenSTAX)/06%3A_Periodic_Table_and_Periodicity">LibreTexts – Periodicity</a></li>
-    </ul>
-
-    <li><strong>Bonding Foundations & Polarity (Intro)</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_(Zumdahl_and_Decoste)/08%3A_Basic_Concepts_of_Chemical_Bonding/8.2%3A_Electronegativity_and_Polarity">LibreTexts – Electronegativity & Polarity</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.khanacademy.org/science/chemistry/chemical-bonds">Khan Academy – Chemical Bonds</a></li>
-    </ul>
-
-    <li><strong>Naming Compounds</strong></li>
-    <ul>
-      <li><a target="_blank" rel="noopener" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/ChemPRIME_(Moore_et_al.)/13%3A_Compounds_and_Stoichiometry/13.04%3A_Chemical_Nomenclature">LibreTexts – Chemical Nomenclature</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.chemteam.info/Nomenclature/Writing-Formulas.html">ChemTeam – Naming & Formulas</a></li>
-    </ul>
-  </ul>
-</div>
-
+    <!-- Keeping existing Explore structure; no style changes -->
+    <div class="eq-links">
+      <p><strong>Explore:</strong></p>
+      <ul>
+        <li><em>Measurement & Analysis:</em> <a target="_blank" href="https://www.khanacademy.org/science/chemistry/measurement-significant-figures">Khan – Significant figures</a>, <a target="_blank" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_(OpenSTAX)/01%3A_Essentials/01.06%3A_Significant_Figures">LibreTexts – Sig figs</a></li>
+        <li><em>Atomic Structure & Isotopes:</em> <a target="_blank" href="https://phet.colorado.edu/en/simulation/isotopes-and-atomic-mass">PhET – Isotopes & Atomic Mass</a>, <a target="_blank" href="https://www.khanacademy.org/science/chemistry/atomic-structure-and-properties">Khan – Atomic structure</a></li>
+        <li><em>Electrons & Emission:</em> <a target="_blank" href="https://phet.colorado.edu/en/simulation/hydrogen-atom">PhET – Bohr/Models</a>, <a target="_blank" href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Spectroscopy/Electronic_Spectroscopy/Electronic_Transitions">LibreTexts – Electronic transitions</a></li>
+        <li><em>Bonding & Properties:</em> <a target="_blank" href="https://www.khanacademy.org/science/chemistry/chemical-bonds">Khan – Chemical bonds</a>, <a target="_blank" href="https://chem.libretexts.org/Courses/General_Chemistry">LibreTexts – Bonding overview</a></li>
+        <li><em>Nomenclature (Intro):</em> <a target="_blank" href="https://www.khanacademy.org/science/chemistry/chemical-reactions-stoichiome/naming-chemical-compounds">Khan – Naming</a>, <a target="_blank" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/ChemPRIME/01%3A_Foundations/1.4%3A_Naming_Compounds">LibreTexts – Naming compounds</a></li>
+      </ul>
+    </div>
   </section>
+
+  <!-- ======== PACING GUIDE (UPDATED CONTENT ONLY; SAME STRUCTURE/STYLING) ======== -->
 
   <!-- WEEK 1 -->
   <details class="week" open id="u1w1">
-    <summary><span class="chev">▶</span> Week 1 (Days 1–5) — Safety, Measurement, and Classification</summary>
-    <div class="day-card"><h4>Day 1 — Lab Safety & Course Expectations</h4><p><strong>Objective:</strong> Understand classroom safety protocols and expectations.</p><p><strong>In class:</strong> Safety contract review; equipment overview.</p><p><strong>Homework:</strong> Signed safety contract.</p><p><strong>Checkpoint:</strong> Safety rules quiz.</p></div>
-    <div class="day-card"><h4>Day 2 — Measurement Systems & SI Units</h4><p><strong>Objective:</strong> Use SI base units consistently.</p><p><strong>In class:</strong> Measurement stations; metric conversions.</p><p><strong>Homework:</strong> Metric practice worksheet.</p><p><strong>Checkpoint:</strong> Convert 3 measurements.</p></div>
-    <div class="day-card"><h4>Day 3 — Significant Figures I</h4><p><strong>Objective:</strong> Apply significant-figure rules for measured values.</p><p><strong>In class:</strong> Guided examples; drills.</p><p><strong>Homework:</strong> Sig figs practice A.</p><p><strong>Checkpoint:</strong> Mini-quiz.</p></div>
-    <div class="day-card"><h4>Day 4 — Significant Figures II & Error Analysis</h4><p><strong>Objective:</strong> Apply sig figs in calculations; evaluate percent error.</p><p><strong>In class:</strong> Practice set + error % activity.</p><p><strong>Homework:</strong> Sig figs practice B.</p><p><strong>Checkpoint:</strong> One calc with error %.</p></div>
-    <div class="day-card"><h4>Day 5 — Matter & Its Classification</h4><p><strong>Objective:</strong> Differentiate pure substances, mixtures, elements, compounds.</p><p><strong>In class:</strong> Card sort of everyday examples.</p><p><strong>Homework:</strong> Classification worksheet.</p><p><strong>Checkpoint:</strong> Classify 5 examples correctly.</p></div>
+    <summary><span class="chev">▶</span> Week 1 (Days 1–5) — Safety, Measurement, & Quantitative Foundations</summary>
+
+    <div class="day-card">
+      <h4>Day 1 — Lab Safety & Course Launch</h4>
+      <p><strong>Objective:</strong> Establish lab safety norms; understand course expectations.</p>
+      <p><strong>In class:</strong> Safety contract; equipment tour; safety scenarios.</p>
+      <p><strong>Homework:</strong> Signed safety contract; syllabus acknowledgment.</p>
+      <p><strong>Checkpoint:</strong> Safety exit ticket.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 2 — SI Units, Precision, & Significant Figures</h4>
+      <p><strong>Objective:</strong> Record and report measurements with correct sig figs.</p>
+      <p><strong>In class:</strong> Measurement stations; uncertainty; estimating last digit.</p>
+      <p><strong>Homework:</strong> Sig fig practice set A.</p>
+      <p><strong>Checkpoint:</strong> Mini-quiz (readings & sig figs).</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 3 — Dimensional Analysis</h4>
+      <p><strong>Objective:</strong> Convert units with multi-step factor-label method.</p>
+      <p><strong>In class:</strong> Scaffolded conversions; contextual problems.</p>
+      <p><strong>Homework:</strong> Conversion set B.</p>
+      <p><strong>Checkpoint:</strong> Two-path conversion.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 4 — Density & % Error</h4>
+      <p><strong>Objective:</strong> Calculate density; evaluate accuracy/precision.</p>
+      <p><strong>In class:</strong> Density stations; error analysis.</p>
+      <p><strong>Homework:</strong> Density problems; reflection on error sources.</p>
+      <p><strong>Checkpoint:</strong> Quick calc check.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 5 — Matter & Classification</h4>
+      <p><strong>Objective:</strong> Classify substances/mixtures; physical vs chemical change.</p>
+      <p><strong>In class:</strong> Card sort; evidence discussion.</p>
+      <p><strong>Homework:</strong> Reading & notes.</p>
+      <p><strong>Checkpoint:</strong> Exit ticket.</p>
+    </div>
   </details>
 
   <!-- WEEK 2 -->
   <details class="week" id="u1w2">
-    <summary><span class="chev">▶</span> Week 2 (Days 6–10) — Properties & Atomic Theory Foundations</summary>
-    <div class="day-card"><h4>Day 6 — Physical vs Chemical Properties + Law of Conservation of Mass</h4><p><strong>Objective:</strong> Identify physical vs chemical properties; connect observations to conservation of mass.</p><p><strong>In class:</strong> Demonstrations (melting vs combustion); short conservation demo.</p><p><strong>Homework:</strong> Properties & conservation set.</p><p><strong>Checkpoint:</strong> Classify examples + balance a mini reaction.</p></div>
-    <div class="day-card"><h4>Day 7 — History of Atomic Theory (Dalton → Thomson → Rutherford → Bohr)</h4><p><strong>Objective:</strong> Summarize the evolution of atomic theory and limits of each model.</p><p><strong>In class:</strong> Timeline lecture/discussion.</p><p><strong>Homework:</strong> Atomic theory summary sheet.</p><p><strong>Checkpoint:</strong> Match scientist to contribution.</p></div>
-    <div class="day-card"><h4>Day 8 — Bohr Model Practice</h4><p><strong>Objective:</strong> Apply Bohr’s model to hydrogen and simple ions.</p><p><strong>In class:</strong> Guided diagrams; whiteboard practice.</p><p><strong>Homework:</strong> Bohr model worksheet.</p><p><strong>Checkpoint:</strong> Draw three assigned Bohr models.</p></div>
-    <div class="day-card"><h4>Day 9 — Quantum Model (Electron Cloud & Orbitals)</h4><p><strong>Objective:</strong> Describe the modern quantum model and orbital shapes.</p><p><strong>In class:</strong> Orbital diagrams; probability maps; animations.</p><p><strong>Homework:</strong> Orbital filling practice.</p><p><strong>Checkpoint:</strong> Fill orbital diagram for oxygen.</p></div>
-    <div class="day-card"><h4>Day 10 — Lab: Atomic Mass of “Beans” (Isotope Simulation)</h4><p><strong>Objective:</strong> Model isotope abundance and calculate weighted averages.</p><p><strong>In class:</strong> Lab with “isotope” bean samples.</p><p><strong>Homework:</strong> Complete lab questions.</p><p><strong>Checkpoint:</strong> Submit average atomic mass calculations.</p></div>
+    <summary><span class="chev">▶</span> Week 2 (Days 6–10) — Conservation, Models of Matter, & Intro Nomenclature</summary>
+
+    <div class="day-card">
+      <h4>Day 6 — Properties & Changes (Concise)</h4>
+      <p><strong>Objective:</strong> Differentiate physical vs chemical properties/changes with targeted examples.</p>
+      <p><strong>In class:</strong> Rapid stations; CER mini-claims.</p>
+      <p><strong>Homework:</strong> Short practice set.</p>
+      <p><strong>Checkpoint:</strong> Classify two scenarios.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 7 — Law of Conservation of Mass (Concept Focus)</h4>
+      <p><strong>Objective:</strong> Explain conservation qualitatively and quantitatively.</p>
+      <p><strong>In class:</strong> Before/after mass tasks; source-of-error discussion.</p>
+      <p><strong>Homework:</strong> Conservation practice.</p>
+      <p><strong>Checkpoint:</strong> Short item on closed vs open systems.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 8 — Dalton→Thomson→Rutherford→Bohr (Combined History)</h4>
+      <p><strong>Objective:</strong> Trace key model changes and their evidence.</p>
+      <p><strong>In class:</strong> Timeline lecture & retrieval practice.</p>
+      <p><strong>Homework:</strong> Bohr practice (n→n transitions).</p>
+      <p><strong>Checkpoint:</strong> One-pager summary.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 9 — Quantum Model Intro (Orbitals & Electron Cloud)</h4>
+      <p><strong>Objective:</strong> Contrast Bohr orbits vs quantum orbitals at a conceptual level.</p>
+      <p><strong>In class:</strong> Visualizations; probability density; energy levels.</p>
+      <p><strong>Homework:</strong> Guided notes.</p>
+      <p><strong>Checkpoint:</strong> Quick compare/contrast.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 10 — Lab: Conservation of Mass (Closed System)</h4>
+      <p><strong>Objective:</strong> Verify conservation in a gas-producing reaction using a closed system (Erlenmeyer + balloon).</p>
+      <p><strong>In class:</strong> Run lab; error analysis planning.</p>
+      <p><strong>Homework:</strong> Finish calculations.</p>
+      <p><strong>Checkpoint:</strong> Δm and % error computed.</p>
+      <p><a class="download" href="labs/unit1/Lab1_Conservation_of_Mass_FINAL_FIXED.pdf" download>Download Lab 1 (PDF)</a></p>
+    </div>
   </details>
 
   <!-- WEEK 3 -->
   <details class="week" id="u1w3">
-    <summary><span class="chev">▶</span> Week 3 (Days 11–15) — Structure of the Atom & Nuclear Basics</summary>
-    <div class="day-card"><h4>Day 11 — Isotopes & Average Atomic Mass</h4><p><strong>Objective:</strong> Calculate average atomic mass from isotopic data.</p><p><strong>In class:</strong> Practice problems + group work.</p><p><strong>Homework:</strong> Average atomic mass worksheet.</p><p><strong>Checkpoint:</strong> Three calculations.</p></div>
-    <div class="day-card"><h4>Day 12 — Nuclear Basics I: Stability & Radiation Types</h4><p><strong>Objective:</strong> Distinguish alpha, beta, gamma radiation and stability trends.</p><p><strong>In class:</strong> Notes + discussion.</p><p><strong>Homework:</strong> Practice sheet.</p><p><strong>Checkpoint:</strong> Classify decay types.</p></div>
-    <div class="day-card"><h4>Day 13 — Nuclear Basics II: Half-Life Calculations</h4><p><strong>Objective:</strong> Perform half-life calculations and interpret decay curves.</p><p><strong>In class:</strong> Guided practice.</p><p><strong>Homework:</strong> Half-life problem set.</p><p><strong>Checkpoint:</strong> Solve two half-life problems.</p></div>
-    <div class="day-card"><h4>Day 14 — Applications of Nuclear Chemistry</h4><p><strong>Objective:</strong> Connect nuclear processes to imaging, therapy, energy.</p><p><strong>In class:</strong> Case studies; pros/cons.</p><p><strong>Homework:</strong> Article summary.</p><p><strong>Checkpoint:</strong> One application with evidence.</p></div>
-    <div class="day-card"><h4>Day 15 — Quiz: Atoms, Isotopes, Nuclear Basics</h4><p><strong>Objective:</strong> Demonstrate mastery of atomic/nuclear concepts.</p><p><strong>In class:</strong> Quiz.</p><p><strong>Homework:</strong> None.</p><p><strong>Checkpoint:</strong> Quiz score recorded.</p></div>
+    <summary><span class="chev">▶</span> Week 3 (Days 11–15) — Isotopes, Atomic Mass, & Electron Transitions</summary>
+
+    <div class="day-card">
+      <h4>Day 11 — Isotopes & Average Atomic Mass</h4>
+      <p><strong>Objective:</strong> Define isotopes; compute weighted averages.</p>
+      <p><strong>In class:</strong> Modeling; practice problems.</p>
+      <p><strong>Homework:</strong> Avg atomic mass set A.</p>
+      <p><strong>Checkpoint:</strong> Spot calc.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 12 — Lab: Isotope Simulation (Beans)</h4>
+      <p><strong>Objective:</strong> Model isotopes and calculate weighted average atomic mass.</p>
+      <p><strong>In class:</strong> Run simulation; compare groups.</p>
+      <p><strong>Homework:</strong> Complete analysis questions.</p>
+      <p><strong>Checkpoint:</strong> Weighted average shown.</p>
+      <p><a class="download" href="labs/unit1/Lab2_Isotope_Simulation_Beans_FINAL.pdf" download>Download Lab 2 (PDF)</a></p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 13 — Emission & Electron Transitions</h4>
+      <p><strong>Objective:</strong> Connect energy levels to emission spectra.</p>
+      <p><strong>In class:</strong> Photon energy & color; sample IDs.</p>
+      <p><strong>Homework:</strong> Emission practice set.</p>
+      <p><strong>Checkpoint:</strong> Short item (n→n transition reasoning).</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 14 — Lab: Flame Tests</h4>
+      <p><strong>Objective:</strong> Observe emission colors of ions; identify unknown(s).</p>
+      <p><strong>In class:</strong> Run flame tests; contamination control.</p>
+      <p><strong>Homework:</strong> Finish CER conclusion.</p>
+      <p><strong>Checkpoint:</strong> Unknown ID claim.</p>
+      <p><a class="download" href="labs/unit1/Lab3_Flame_Tests_FINAL.pdf" download>Download Lab 3 (PDF)</a></p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 15 — Periodic Trends (Intro)</h4>
+      <p><strong>Objective:</strong> Qualitatively describe key trends (radii, IE, EN).</p>
+      <p><strong>In class:</strong> Trend maps; reasoning prompts.</p>
+      <p><strong>Homework:</strong> Trend problems A.</p>
+      <p><strong>Checkpoint:</strong> Explain one trend with structure reasoning.</p>
+    </div>
   </details>
 
   <!-- WEEK 4 -->
   <details class="week" id="u1w4">
-    <summary><span class="chev">▶</span> Week 4 (Days 16–20) — Periodic Table & Organization</summary>
-    <div class="day-card"><h4>Day 16 — Development of the Periodic Table</h4><p><strong>Objective:</strong> Describe how the periodic table was developed.</p><p><strong>In class:</strong> Mini-lecture + notes.</p><p><strong>Homework:</strong> Guided worksheet.</p><p><strong>Checkpoint:</strong> Timeline question.</p></div>
-    <div class="day-card"><h4>Day 17 — Periodic Trends I (Atomic Radius, Ionization Energy)</h4><p><strong>Objective:</strong> Explain trends using structure & effective nuclear charge.</p><p><strong>In class:</strong> Graphing/analysis.</p><p><strong>Homework:</strong> Trend practice.</p><p><strong>Checkpoint:</strong> Explain one trend with evidence.</p></div>
-    <div class="day-card"><h4>Day 18 — Periodic Trends II (Electronegativity, Reactivity)</h4><p><strong>Objective:</strong> Predict reactivity patterns using electronegativity.</p><p><strong>In class:</strong> Data analysis.</p><p><strong>Homework:</strong> Practice problems.</p><p><strong>Checkpoint:</strong> Predict a trend correctly.</p></div>
-    <div class="day-card"><h4>Day 19 — Lab: Flame Tests</h4><p><strong>Objective:</strong> Connect emission colors to e⁻ transitions & metal ions.</p><p><strong>In class:</strong> Flame tests lab.</p><p><strong>Homework:</strong> Lab questions.</p><p><strong>Checkpoint:</strong> Completed lab sheet.</p></div>
-    <div class="day-card"><h4>Day 20 — Trends Review & Quiz</h4><p><strong>Objective:</strong> Consolidate periodic trends understanding.</p><p><strong>In class:</strong> Review + quiz.</p><p><strong>Homework:</strong> Study guide.</p><p><strong>Checkpoint:</strong> Quiz grade.</p></div>
+    <summary><span class="chev">▶</span> Week 4 (Days 16–20) — Trends Deep Dive & Intro Bonding</summary>
+
+    <div class="day-card">
+      <h4>Day 16 — Periodic Trends (Practice)</h4>
+      <p><strong>Objective:</strong> Apply trend reasoning across periods/groups.</p>
+      <p><strong>In class:</strong> Data sets & justifications.</p>
+      <p><strong>Homework:</strong> Mixed practice.</p>
+      <p><strong>Checkpoint:</strong> Justify a pairwise comparison.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 17 — Ionic vs Covalent (Concepts)</h4>
+      <p><strong>Objective:</strong> Contrast ionic lattices vs covalent molecules; predict bonding type.</p>
+      <p><strong>In class:</strong> Structure–property links.</p>
+      <p><strong>Homework:</strong> Short reading & questions.</p>
+      <p><strong>Checkpoint:</strong> Classify three compounds with reasoning.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 18 — Naming I: Ionic Compounds</h4>
+      <p><strong>Objective:</strong> Name/write formulas for binary ionic & with transitions (Roman numerals).</p>
+      <p><strong>In class:</strong> Practice set.</p>
+      <p><strong>Homework:</strong> Ionic naming worksheet A.</p>
+      <p><strong>Checkpoint:</strong> 6-item quick check.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 19 — Naming II: Covalent & Acids (Intro)</h4>
+      <p><strong>Objective:</strong> Name binary covalent (prefixes) and intro to acid names.</p>
+      <p><strong>In class:</strong> Partner practice.</p>
+      <p><strong>Homework:</strong> Naming worksheet B.</p>
+      <p><strong>Checkpoint:</strong> Exit ticket (naming mix).</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 20 — Naming III: Mixed Review</h4>
+      <p><strong>Objective:</strong> Mixed naming/formula writing with justification.</p>
+      <p><strong>In class:</strong> Stations.</p>
+      <p><strong>Homework:</strong> Corrections & targeted practice.</p>
+      <p><strong>Checkpoint:</strong> Mini-quiz.</p>
+    </div>
   </details>
 
   <!-- WEEK 5 -->
   <details class="week" id="u1w5">
-    <summary><span class="chev">▶</span> Week 5 (Days 21–25) — Bonding Foundations</summary>
-    <div class="day-card"><h4>Day 21 — Ionic vs Covalent Bonds (Intro)</h4><p><strong>Objective:</strong> Differentiate ionic vs covalent bonding.</p><p><strong>In class:</strong> Notes + sorting practice.</p><p><strong>Homework:</strong> Bond classification worksheet.</p><p><strong>Checkpoint:</strong> Classify sample bonds.</p></div>
-    <div class="day-card"><h4>Day 22 — Electronegativity & Bond Polarity</h4><p><strong>Objective:</strong> Determine polarity based on ΔEN and geometry (intro).</p><p><strong>In class:</strong> Diagramming practice.</p><p><strong>Homework:</strong> Polarity worksheet.</p><p><strong>Checkpoint:</strong> Justify polarity examples.</p></div>
-    <div class="day-card"><h4>Day 23 — Properties of Ionic & Covalent Compounds</h4><p><strong>Objective:</strong> Compare mp, conductivity, solubility.</p><p><strong>In class:</strong> Demo + class chart.</p><p><strong>Homework:</strong> Property comparison sheet.</p><p><strong>Checkpoint:</strong> Classify compounds by properties.</p></div>
-    <div class="day-card"><h4>Day 24 — Metallic Bonding & Alloys</h4><p><strong>Objective:</strong> Describe metallic bonding and alloy behavior.</p><p><strong>In class:</strong> Short talk; examples.</p><p><strong>Homework:</strong> Short-answer set.</p><p><strong>Checkpoint:</strong> Provide one alloy + use.</p></div>
-    <div class="day-card"><h4>Day 25 — Lab: Properties of Ionic vs Covalent Compounds</h4><p><strong>Objective:</strong> Test and compare conductivity, solubility, melting behavior.</p><p><strong>In class:</strong> Lab stations.</p><p><strong>Homework:</strong> Lab report questions.</p><p><strong>Checkpoint:</strong> Submit results & analysis.</p></div>
+    <summary><span class="chev">▶</span> Week 5 (Days 21–25) — Bonding Properties & Classification Lab</summary>
+
+    <div class="day-card">
+      <h4>Day 21 — Properties & Structure Links</h4>
+      <p><strong>Objective:</strong> Justify macroscopic properties from bonding models.</p>
+      <p><strong>In class:</strong> Reasoning prompts; exemplars.</p>
+      <p><strong>Homework:</strong> Problem set (structure→property).</p>
+      <p><strong>Checkpoint:</strong> Claim→Evidence→Reasoning mini.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 22 — Lab: Ionic vs Covalent Properties</h4>
+      <p><strong>Objective:</strong> Use solubility, conductivity, and melting behavior to classify unknowns.</p>
+      <p><strong>In class:</strong> Run lab; classify with justification.</p>
+      <p><strong>Homework:</strong> CER write-up.</p>
+      <p><strong>Checkpoint:</strong> Unknown classification claim.</p>
+      <p><a class="download" href="labs/unit1/Lab4_Ionic_vs_Covalent_Properties_FINAL.pdf" download>Download Lab 4 (PDF)</a></p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 23 — Nomenclature Problem Solving</h4>
+      <p><strong>Objective:</strong> Targeted practice from assessment data.</p>
+      <p><strong>In class:</strong> Whiteboards; error analysis.</p>
+      <p><strong>Homework:</strong> Mixed set C.</p>
+      <p><strong>Checkpoint:</strong> Self-check rubric row.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 24 — Cumulative Practice (Unit Standards)</h4>
+      <p><strong>Objective:</strong> Integrate models, trends, and naming.</p>
+      <p><strong>In class:</strong> Circuit problems.</p>
+      <p><strong>Homework:</strong> Light review.</p>
+      <p><strong>Checkpoint:</strong> Readiness poll.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 25 — Mid-Unit Check</h4>
+      <p><strong>Objective:</strong> Assess progress on HS-PS1-1, -2, -3, -8.</p>
+      <p><strong>In class:</strong> Short assessment + corrections.</p>
+      <p><strong>Homework:</strong> Correction notes.</p>
+      <p><strong>Checkpoint:</strong> Reflection prompt.</p>
+    </div>
   </details>
 
   <!-- WEEK 6 -->
   <details class="week" id="u1w6">
-    <summary><span class="chev">▶</span> Week 6 (Days 26–30) — Naming Compounds I</summary>
-    <div class="day-card"><h4>Day 26 — Naming Ionic Compounds (Type I)</h4><p><strong>Objective:</strong> Correctly name binary ionic compounds.</p><p><strong>In class:</strong> Guided practice.</p><p><strong>Homework:</strong> Naming worksheet.</p><p><strong>Checkpoint:</strong> Name 5 compounds.</p></div>
-    <div class="day-card"><h4>Day 27 — Naming Ionic Compounds with Transition Metals (Type II)</h4><p><strong>Objective:</strong> Use Roman numerals for variable oxidation states.</p><p><strong>In class:</strong> Examples + practice.</p><p><strong>Homework:</strong> Practice set.</p><p><strong>Checkpoint:</strong> Name 5 examples.</p></div>
-    <div class="day-card"><h4>Day 28 — Polyatomic Ions in Compounds</h4><p><strong>Objective:</strong> Identify and name compounds with polyatomic ions.</p><p><strong>In class:</strong> Group practice.</p><p><strong>Homework:</strong> Worksheet.</p><p><strong>Checkpoint:</strong> Name 3 polyatomic compounds.</p></div>
-    <div class="day-card"><h4>Day 29 — Lab: Formula/Naming Practice Stations</h4><p><strong>Objective:</strong> Apply naming rules across mixed stations.</p><p><strong>In class:</strong> Rotating station work.</p><p><strong>Homework:</strong> Lab sheet.</p><p><strong>Checkpoint:</strong> Complete all stations.</p></div>
-    <div class="day-card"><h4>Day 30 — Quiz: Ionic Compound Naming</h4><p><strong>Objective:</strong> Demonstrate mastery of ionic naming.</p><p><strong>In class:</strong> Quiz.</p><p><strong>Homework:</strong> Review errors.</p><p><strong>Checkpoint:</strong> Quiz grade.</p></div>
+    <summary><span class="chev">▶</span> Week 6 (Days 26–30) — Reinforcement & Project Launch</summary>
+
+    <div class="day-card">
+      <h4>Day 26 — Trends & Bonding Reasoning Workshop</h4>
+      <p><strong>Objective:</strong> Strengthen explanation quality with quantitative/qualitative evidence.</p>
+      <p><strong>In class:</strong> Model-based claims; critique rounds.</p>
+      <p><strong>Homework:</strong> Short write-ups.</p>
+      <p><strong>Checkpoint:</strong> Reasoning rubric row.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 27 — Naming Mastery Day</h4>
+      <p><strong>Objective:</strong> Mastery checks for all naming types (ionic, covalent, acids intro).</p>
+      <p><strong>In class:</strong> Stations; self-grading keys.</p>
+      <p><strong>Homework:</strong> Any redo practice.</p>
+      <p><strong>Checkpoint:</strong> Mastery log.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 28 — Project Launch (Real-World Connection)</h4>
+      <p><strong>Objective:</strong> Understand brief/constraints; connect standards to authentic problem.</p>
+      <p><strong>In class:</strong> Teams; proposal outlines.</p>
+      <p><strong>Homework:</strong> Proposal draft.</p>
+      <p><strong>Checkpoint:</strong> Proposal check.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 29 — Data & Model Plan</h4>
+      <p><strong>Objective:</strong> Identify needed evidence (measurements, references, assumptions).</p>
+      <p><strong>In class:</strong> Planning clinic.</p>
+      <p><strong>Homework:</strong> Revise plan.</p>
+      <p><strong>Checkpoint:</strong> Plan sign-off.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 30 — Prototype/Trial</h4>
+      <p><strong>Objective:</strong> Run a small trial or case study; record findings.</p>
+      <p><strong>In class:</strong> Execution; data table checks.</p>
+      <p><strong>Homework:</strong> Analysis draft.</p>
+      <p><strong>Checkpoint:</strong> Evidence audit.</p>
+    </div>
   </details>
 
   <!-- WEEK 7 -->
   <details class="week" id="u1w7">
-    <summary><span class="chev">▶</span> Week 7 (Days 31–35) — Naming Compounds II</summary>
-    <div class="day-card"><h4>Day 31 — Naming Covalent Compounds</h4><p><strong>Objective:</strong> Name covalent compounds using prefixes.</p><p><strong>In class:</strong> Guided practice + whiteboards.</p><p><strong>Homework:</strong> Worksheet.</p><p><strong>Checkpoint:</strong> Name 5 covalent compounds.</p></div>
-    <div class="day-card"><h4>Day 32 — Naming Acids (Binary & Oxyacids)</h4><p><strong>Objective:</strong> Name acids using correct conventions.</p><p><strong>In class:</strong> Mini-lesson + practice.</p><p><strong>Homework:</strong> Worksheet.</p><p><strong>Checkpoint:</strong> Name 5 acids.</p></div>
-    <div class="day-card"><h4>Day 33 — Naming Hydrates & Review</h4><p><strong>Objective:</strong> Identify/name hydrates; cumulative practice.</p><p><strong>In class:</strong> Examples + mixed review.</p><p><strong>Homework:</strong> Practice set.</p><p><strong>Checkpoint:</strong> Name 3 hydrates.</p></div>
-    <div class="day-card"><h4>Day 34 — Lab: Compound Naming “Mystery Samples”</h4><p><strong>Objective:</strong> Identify unknown samples via naming rules.</p><p><strong>In class:</strong> Lab investigation.</p><p><strong>Homework:</strong> Lab report.</p><p><strong>Checkpoint:</strong> Completed analysis.</p></div>
-    <div class="day-card"><h4>Day 35 — Wrap-Up & Peer Teaching</h4><p><strong>Objective:</strong> Explain naming rules clearly to peers.</p><p><strong>In class:</strong> Peer-teaching activity.</p><p><strong>Homework:</strong> Reflection.</p><p><strong>Checkpoint:</strong> Peer evaluation.</p></div>
+    <summary><span class="chev">▶</span> Week 7 (Days 31–35) — Project Work & Communication</summary>
+
+    <div class="day-card">
+      <h4>Day 31 — Iterate & Improve</h4>
+      <p><strong>Objective:</strong> Adjust plan based on trial data; justify changes.</p>
+      <p><strong>In class:</strong> Mentor feedback.</p>
+      <p><strong>Homework:</strong> Update visuals.</p>
+      <p><strong>Checkpoint:</strong> Change log.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 32 — Quantitative Storytelling</h4>
+      <p><strong>Objective:</strong> Make math & evidence narrative clear.</p>
+      <p><strong>In class:</strong> Charts/tables clinic.</p>
+      <p><strong>Homework:</strong> Slide draft.</p>
+      <p><strong>Checkpoint:</strong> Slide check.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 33 — Draft Presentations</h4>
+      <p><strong>Objective:</strong> Assemble draft deliverables.</p>
+      <p><strong>In class:</strong> Peer review.</p>
+      <p><strong>Homework:</strong> Revisions.</p>
+      <p><strong>Checkpoint:</strong> Rubric alignment.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 34 — Rehearsal</h4>
+      <p><strong>Objective:</strong> Practice timing & Q/A.</p>
+      <p><strong>In class:</strong> Coach notes.</p>
+      <p><strong>Homework:</strong> Final edits.</p>
+      <p><strong>Checkpoint:</strong> Readiness.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 35 — Submit Preview</h4>
+      <p><strong>Objective:</strong> Turn in preview version for final notes.</p>
+      <p><strong>In class:</strong> Final polish.</p>
+      <p><strong>Homework:</strong> None.</p>
+      <p><strong>Checkpoint:</strong> Submission logged.</p>
+    </div>
   </details>
 
   <!-- WEEK 8 -->
   <details class="week" id="u1w8">
-    <summary><span class="chev">▶</span> Week 8 (Days 36–40) — Extended Practice & Integration</summary>
-    <div class="day-card"><h4>Day 36 — Mixed Naming → Formula Practice</h4><p><strong>Objective:</strong> Write formulas from names across ionic, covalent, acids, hydrates.</p><p><strong>In class:</strong> Mixed practice rotations.</p><p><strong>Homework:</strong> Worksheet.</p><p><strong>Checkpoint:</strong> Complete 10 mixed examples.</p></div>
-    <div class="day-card"><h4>Day 37 — Cooperative Practice Day</h4><p><strong>Objective:</strong> Build fluency and accuracy under time.</p><p><strong>In class:</strong> Team rounds; error-analysis huddles.</p><p><strong>Homework:</strong> None.</p><p><strong>Checkpoint:</strong> Participation + accuracy metrics.</p></div>
-    <div class="day-card"><h4>Day 38 — Lab: Identifying Unknown Compounds</h4><p><strong>Objective:</strong> Identify unknowns using naming logic + quick property checks.</p><p><strong>In class:</strong> Lab investigation.</p><p><strong>Homework:</strong> Lab report.</p><p><strong>Checkpoint:</strong> Correct identification with justification.</p></div>
-    <div class="day-card"><h4>Day 39 — Case Study: Real-World Naming Errors</h4><p><strong>Objective:</strong> Analyze how misnaming leads to safety/quality issues.</p><p><strong>In class:</strong> Case studies (medicine/industry) + mitigations.</p><p><strong>Homework:</strong> Reflection paragraph.</p><p><strong>Checkpoint:</strong> Two prevention strategies.</p></div>
-    <div class="day-card"><h4>Day 40 — Cumulative Review</h4><p><strong>Objective:</strong> Integrate the unit’s concepts.</p><p><strong>In class:</strong> Jeopardy-style review.</p><p><strong>Homework:</strong> Study guide.</p><p><strong>Checkpoint:</strong> Mock quiz performance.</p></div>
+    <summary><span class="chev">▶</span> Week 8 (Days 36–40) — Reaction Evidence & Full Lab + Present</summary>
+
+    <div class="day-card">
+      <h4>Day 36 — Reaction Evidence & Types (Prep)</h4>
+      <p><strong>Objective:</strong> Identify evidence of chemical change; classify basic reaction types.</p>
+      <p><strong>In class:</strong> Warm-ups & demo analysis.</p>
+      <p><strong>Homework:</strong> Pre-lab read.</p>
+      <p><strong>Checkpoint:</strong> Safety & plan check.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 37 — Project Presentations A</h4>
+      <p><strong>Objective:</strong> Present & defend solutions.</p>
+      <p><strong>In class:</strong> Panel Q/A.</p>
+      <p><strong>Homework:</strong> Peer notes.</p>
+      <p><strong>Checkpoint:</strong> Rubric rows.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 38 — Project Presentations B</h4>
+      <p><strong>Objective:</strong> Continue defenses; synthesize takeaways.</p>
+      <p><strong>In class:</strong> Gallery.</p>
+      <p><strong>Homework:</strong> Reflection start.</p>
+      <p><strong>Checkpoint:</strong> Reflection in.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 39 — Lab: Reaction Types (Full Lab)</h4>
+      <p><strong>Objective:</strong> Perform multiple reactions; record evidence; balance and classify each.</p>
+      <p><strong>In class:</strong> Run lab; balanced equations + classification.</p>
+      <p><strong>Homework:</strong> Finish analysis.</p>
+      <p><strong>Checkpoint:</strong> Data table + two classifications justified.</p>
+      <p><a class="download" href="labs/unit1/Lab5_Reaction_Types_FINAL.pdf" download>Download Lab 5 (PDF)</a></p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 40 — Reaction Types Debrief & Targeted Practice</h4>
+      <p><strong>Objective:</strong> Address misconceptions; strengthen evidence→classification reasoning.</p>
+      <p><strong>In class:</strong> Error analysis stations.</p>
+      <p><strong>Homework:</strong> Light practice.</p>
+      <p><strong>Checkpoint:</strong> Quick classify.</p>
+    </div>
   </details>
 
   <!-- WEEK 9 -->
   <details class="week" id="u1w9">
-    <summary><span class="chev">▶</span> Week 9 (Days 41–45) — Project & Assessment</summary>
-    <div class="day-card"><h4>Day 41 — Project Launch: “The Language of Chemistry”</h4><p><strong>Objective:</strong> Understand scope, roles, expectations.</p><p><strong>In class:</strong> Prompt; rubric; topic brainstorm (medicine, nuclear safety, consumer products, industry).</p><p><strong>Homework:</strong> Project proposal.</p><p><strong>Checkpoint:</strong> Proposal submitted.</p></div>
-    <div class="day-card"><h4>Day 42 — Research & Data Gathering</h4><p><strong>Objective:</strong> Collect examples where naming/structure matter.</p><p><strong>In class:</strong> Research workshop.</p><p><strong>Homework:</strong> Annotated bibliography.</p><p><strong>Checkpoint:</strong> Two sources per student.</p></div>
-    <div class="day-card"><h4>Day 43 — Project Development</h4><p><strong>Objective:</strong> Build visual + written components.</p><p><strong>In class:</strong> Draft slides/models/infographics.</p><p><strong>Homework:</strong> Revise draft.</p><p><strong>Checkpoint:</strong> Teacher draft check.</p></div>
-    <div class="day-card"><h4>Day 44 — Student Presentations I</h4><p><strong>Objective:</strong> Communicate to a non-expert audience.</p><p><strong>In class:</strong> Half the groups present.</p><p><strong>Homework:</strong> Reflection notes.</p><p><strong>Checkpoint:</strong> Peer feedback forms.</p></div>
-    <div class="day-card"><h4>Day 45 — Student Presentations II + Unit Exam</h4><p><strong>Objective:</strong> Conclude presentations and demonstrate mastery.</p><p><strong>In class:</strong> Remaining groups + exam.</p><p><strong>Homework:</strong> None.</p><p><strong>Checkpoint:</strong> Final rubric + exam grade.</p></div>
+    <summary><span class="chev">▶</span> Week 9 (Days 41–45) — Consolidate & Assess</summary>
+
+    <div class="day-card">
+      <h4>Day 41 — Cumulative Review I</h4>
+      <p><strong>Objective:</strong> Integrate measurement, models, isotopes, trends, bonding, and naming.</p>
+      <p><strong>In class:</strong> Review circuit.</p>
+      <p><strong>Homework:</strong> Practice set.</p>
+      <p><strong>Checkpoint:</strong> Readiness poll.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 42 — Cumulative Review II</h4>
+      <p><strong>Objective:</strong> Target individual weak spots from data.</p>
+      <p><strong>In class:</strong> Small-group workshops.</p>
+      <p><strong>Homework:</strong> Corrections.</p>
+      <p><strong>Checkpoint:</strong> Self-assessment.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 43 — Mixed Item Practice (Standards-Aligned)</h4>
+      <p><strong>Objective:</strong> Practice aligned with HS-PS1-1, -2, -3, -8.</p>
+      <p><strong>In class:</strong> Timed sets + review.</p>
+      <p><strong>Homework:</strong> Light practice.</p>
+      <p><strong>Checkpoint:</strong> Ticket-out.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 44 — Unit Review & Reflection</h4>
+      <p><strong>Objective:</strong> Finalize readiness; set improvement goals.</p>
+      <p><strong>In class:</strong> Short review; Q/A.</p>
+      <p><strong>Homework:</strong> Rest & skim notes.</p>
+      <p><strong>Checkpoint:</strong> Readiness check.</p>
+    </div>
+
+    <div class="day-card">
+      <h4>Day 45 — Unit Exam</h4>
+      <p><strong>Objective:</strong> Summative assessment for Unit 1.</p>
+      <p><strong>In class:</strong> Exam; post-exam reflection.</p>
+      <p><strong>Homework:</strong> None.</p>
+      <p><strong>Checkpoint:</strong> Exam completion.</p>
+    </div>
   </details>
 
-  <section class="callout">
-    <strong>End-of-Unit Project: “The Language of Chemistry”</strong><br/>
-    Use systematic naming and atomic structure to explain/solve a real-world problem (medicine, industry, consumer products, nuclear safety). Include correct naming/structure logic, a clear explanation for non-experts, and supporting calculations/figures where appropriate.
+  <!-- Lab link reminders (file placement) -->
+  <section class="callout mini">
+    <strong>Lab PDFs:</strong> Place files at <code>labs/unit1/</code> with these names:
+    <code>Lab1_Conservation_of_Mass_FINAL_FIXED.pdf</code>,
+    <code>Lab2_Isotope_Simulation_Beans_FINAL.pdf</code>,
+    <code>Lab3_Flame_Tests_FINAL.pdf</code>,
+    <code>Lab4_Ionic_vs_Covalent_Properties_FINAL.pdf</code>,
+    <code>Lab5_Reaction_Types_FINAL.pdf</code>.
   </section>
 </main>
 
@@ -204,8 +490,3 @@
 </footer>
 </body>
 </html>
-
-
-
-
-
